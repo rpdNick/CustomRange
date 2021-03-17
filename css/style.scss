@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+	font-family: 'MyriadPro';
+	src: url('../font/MyriadPro-Regular.eot');
+	src: url('../font/MyriadPro-Regular.woff') format('woff'),
+         url('../font/MyriadPro-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+.no-wrapp{
+    white-space: nowrap;
+}
+.txt-line{
+    position: relative;
+}
+.txt-line::before{
+    content:'';
+    position: absolute;
+    top: 18px;
+    width: 115px;
+    height: 2px;
+    background: #000;
+}
+
+body{
+    font-family: 'MyriadPro';
+    #main-container{
+        max-width: 520px;
+        padding: 30px 20px;
+        margin: 0 auto;
+        height: 100%;
+        .header{
+            .logo-img{
+                width: 220px; 
+             }
+        }
+        .worker-wrapper{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            .worker-photo{
+                width: 30%;
+                max-width: 218px;
+                img{
+                    width: 100%;
+                }
+            }
+            .worker-info{
+                margin-left: 20px;
+                width: calc(70% - 20px);
+                color: #000;
+                position: relative;
+                .worker-question{
+                    font-size: 16px;
+                }
+                .box{
+                    position: absolute;
+                    bottom: 0;
+                    .worker-name{
+                        color: #333333;
+                        font-size: 18px;
+                        // margin-top: 38px;
+                       }
+                       .worker-position{
+                           color: #807d7d;
+                           font-size: 14px;
+                       }
+                }
+            }
+        }
+        .range-section{
+            margin-top: 30px;
+            .container {
+                align-items: center;
+                display: flex;
+                position: relative;
+                .range__left-side{
+                    height: 50px;
+                    width: 0%;
+                    background-color: rgba(0, 0, 0, 1);
+                }
+                .range__thumb{
+                    position: absolute;
+                    top: 55px;
+                    height: 1.5rem;
+                    width: 1.5rem;
+                    border-radius: 9999px;
+                    background-color: rgba(0, 0, 0, .3);
+                    cursor: pointer;
+                }
+                .range__right-side {
+                    flex: 1;
+                    height: 50px;
+                    background-color: rgba(0, 0, 0, .3);
+                }
+            }
+        }
+    }
+}
