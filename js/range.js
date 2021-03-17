@@ -20,6 +20,10 @@ document.addEventListener('DOMContentLoaded', function() {
         // Attach the listeners to `document`
         document.addEventListener('mousemove', mouseMoveHandler);
         document.addEventListener('mouseup', mouseUpHandler);
+
+         /*Sensor events*/
+         document.addEventListener('touchstart', mouseMoveHandler);
+         document.addEventListener('touchmove', mouseUpHandler);
     };
 
     const mouseMoveHandler = function(e) {
@@ -56,8 +60,17 @@ document.addEventListener('DOMContentLoaded', function() {
         // Remove the handlers of `mousemove` and `mouseup`
         document.removeEventListener('mousemove', mouseMoveHandler);
         document.removeEventListener('mouseup', mouseUpHandler);
+
+         /*Sensor events*/
+        rangeThumb.addEventListener('touchend', mouseDownHandler);
+        rangeThumb.addEventListener('touchend', mouseDownHandler);
     };
 
     // Attach the handler
     rangeThumb.addEventListener('mousedown', mouseDownHandler);
+
+    /*Sensor events*/
+    rangeThumb.addEventListener('touchstart', mouseDownHandler);
+    rangeThumb.addEventListener('touchmove', mouseDownHandler);
+    
 });
