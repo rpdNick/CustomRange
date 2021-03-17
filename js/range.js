@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         x = e.clientX;
         y = e.clientY;
         leftWidth = leftSide.getBoundingClientRect().width;
-
+        $('.test').text('touch1')
         // Attach the listeners to `document`
         document.addEventListener('mousemove', mouseMoveHandler);
         document.addEventListener('mouseup', mouseUpHandler);
@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const mouseMoveHandler = function(e) {
         // How far the mouse has been moved
+        $('.test').text('touch2')
         const dx = e.clientX - x;
         const dy = e.clientY - y;
         const containerWidth = rangeThumb.parentNode.getBoundingClientRect().width;
@@ -51,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Triggered when user drops the rangeThumb
     const mouseUpHandler = function() {
+        $('.test').text('touch3')
         leftSide.style.removeProperty('user-select');
         leftSide.style.removeProperty('pointer-events');
 
@@ -62,8 +64,8 @@ document.addEventListener('DOMContentLoaded', function() {
         document.removeEventListener('mouseup', mouseUpHandler);
 
          /*Sensor events*/
-        rangeThumb.addEventListener('touchend', mouseDownHandler);
-        rangeThumb.addEventListener('touchend', mouseDownHandler);
+        rangeThumb.addEventListener('touchend', mouseMoveHandler);
+        rangeThumb.addEventListener('touchend', mouseUpHandler);
     };
 
     // Attach the handler
