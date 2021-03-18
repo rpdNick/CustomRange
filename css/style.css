@@ -102,21 +102,30 @@ body #main-container .range-section .container {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  width: 314px;
 }
 
 body #main-container .range-section .container .range__left-side {
-  height: 50px;
+  height: 65px;
   width: 0%;
-  background-color: black;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+body #main-container .range-section .container .range__left-side img {
+  width: 314px;
+  min-width: 314px;
+  height: 65px;
 }
 
 body #main-container .range-section .container .range__thumb {
   position: absolute;
-  top: 55px;
-  height: 1.5rem;
-  width: 1.5rem;
+  top: 52px;
+  height: 20px;
+  width: 20px;
   border-radius: 9999px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #e60028;
   cursor: pointer;
 }
 
@@ -124,7 +133,17 @@ body #main-container .range-section .container .range__right-side {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  height: 50px;
-  background-color: rgba(0, 0, 0, 0.3);
+  height: 65px;
+  width: 314px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+body #main-container .range-section .container .range__right-side img {
+  width: 100%;
+  height: 65px;
+  min-height: 65px;
+  min-width: 314px;
 }
 /*# sourceMappingURL=style.css.map */

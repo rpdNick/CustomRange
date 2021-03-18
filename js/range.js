@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Query the element
+    // elements
     const rangeThumb = document.getElementById('range__thumb');
     const leftSide = rangeThumb.previousElementSibling;
     const rightSide = rangeThumb.nextElementSibling;
@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Touch position
     let mobX = 0;
     let mobY = 0;
-    let mobLeftWidth = 0;
 
     // Handle the mousedown event
     // that's triggered when user drags the rangeThumb
@@ -26,11 +25,11 @@ document.addEventListener('DOMContentLoaded', function() {
             //   console.log(e)
             mobX = e.touches[0].pageX;
             mobY = e.touches[0].pageY;
-            console.log('mobile move')
-            console.log(mobX, mobY)
+            // console.log('mobile move')
+            // console.log(mobX, mobY)
             leftWidth = leftSide.getBoundingClientRect().width;
             // Attach the listeners to `document`
-              /*Sensor events*/
+              /**Sensor events**/
             // document.addEventListener('touchend', mouseMoveHandler);
             document.addEventListener('touchmove', mouseMoveHandler);
             document.addEventListener('touchmove', mouseUpHandler);
@@ -38,8 +37,8 @@ document.addEventListener('DOMContentLoaded', function() {
             // console.log(e);
             x = e.clientX;
             y = e.clientY;
-            console.log('x:', x)
-            console.log('y:', y)
+            // console.log('x:', x)
+            // console.log('y:', y)
             leftWidth = leftSide.getBoundingClientRect().width;
             // Attach the listeners to `document`
             document.addEventListener('mousemove', mouseMoveHandler);
@@ -52,9 +51,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // How far the touch has been moved
         console.log(e)
         if(e.type == 'touchmove'){
-            console.log('=======', e.changedTouches[0].clientX)
+            // console.log('=======', e.changedTouches[0].clientX)
            let mdx = e.touches[0].pageX - mobX;
-            console.log(mdx)
+            // console.log(mdx)
 
             const containerWidth = rangeThumb.parentNode.getBoundingClientRect().width;
             let newLeftWidth = (leftWidth + mdx) * 100 / containerWidth;
@@ -71,14 +70,14 @@ document.addEventListener('DOMContentLoaded', function() {
             rightSide.style.userSelect = 'none';
             rightSide.style.pointerEvents = 'none';
 
-            rangeThumb.style.left = `calc(${newLeftWidth}% - 13px)`;
+            rangeThumb.style.left = `calc(${newLeftWidth}% - 9px)`;
         } 
         else {
             // How far the mouse has been moved
-            console.log('+++++++++++++++')
-                  console.log(x)
-                  console.log(e.clientX)  
-                  console.log('+++++++++++++++')
+            // console.log('+++++++++++++++')
+            //       console.log(x)
+            //       console.log(e.clientX)  
+            //       console.log('+++++++++++++++')
             let dx = e.clientX - x;
             // console.log('---------')
             // console.log(dx)
