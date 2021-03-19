@@ -106,7 +106,7 @@ body #main-container .range-section .container {
 }
 
 body #main-container .range-section .container .range__left-side {
-  height: 65px;
+  height: 45px;
   width: 0%;
   overflow: hidden;
   position: relative;
@@ -133,7 +133,7 @@ body #main-container .range-section .container .range__right-side {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  height: 65px;
+  height: 45px;
   width: 314px;
   overflow: hidden;
   position: relative;
