@@ -102,22 +102,26 @@ body #main-container .range-section .container {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  height: 60px;
-  width: 100%;
+  width: 314px;
 }
 
 body #main-container .range-section .container .range__left-side {
-  height: 100%;
+  height: 45px;
   width: 0%;
-  background-color: black;
   overflow: hidden;
   position: relative;
   z-index: 2;
 }
 
+body #main-container .range-section .container .range__left-side img {
+  width: 314px;
+  min-width: 314px;
+  height: 65px;
+}
+
 body #main-container .range-section .container .range__thumb {
   position: absolute;
-  top: 65px;
+  top: 52px;
   height: 20px;
   width: 20px;
   border-radius: 9999px;
@@ -129,12 +133,11 @@ body #main-container .range-section .container .range__right-side {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  height: 100%;
-  width: 100%;
+  height: 45px;
+  width: 314px;
   overflow: hidden;
   position: relative;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
 body #main-container .range-section .container .range__right-side img {
