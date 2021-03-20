@@ -120,6 +120,59 @@
                 </div>
             </div> -->
         </div>
+
+        <div class="hidden-content">
+            <div class="slide-box employer-slider-box">
+                <p class="slides-title">Что Вас разочаровало?</p>
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                                <input type="radio" class="first-question-inp" name="q-1-1" id="q-1-1">
+                                <label class="employer-label" for="q-1-1">
+                                    <div class="check-icon icon-1"></div>
+                                    <p class="employer-label-txt">Отсутствие желания помочь</p>
+                                </label>
+                        </div>
+                        <div class="swiper-slide">
+                                <input type="radio" class="first-question-inp" name="q-1-1" id="q-1-2">
+                                <label class="employer-label" for="q-1-2">
+                                    <div class="check-icon icon-2"></div>
+                                    <p class="employer-label-txt">Вопрос не решен</p>
+                                </label>
+                        </div>
+                        <div class="swiper-slide">
+                                <input type="radio" class="first-question-inp" name="q-1-1" id="q-1-3">
+                                <label class="employer-label" for="q-1-3">
+                                    <div class="check-icon icon-3"></div>
+                                    <p class="employer-label-txt">Медленное обслуживание</p>
+                                </label>
+                        </div>
+                        <div class="swiper-slide">
+                                <input type="radio" class="first-question-inp" name="q-1-1" id="q-1-4">
+                                <label class="employer-label" for="q-1-4">
+                                    <div class="check-icon icon-4"></div>
+                                    <p class="employer-label-txt">Плохое знание продукта/ процесса</p>
+                                </label>
+                        </div>
+                        <div class="swiper-slide">
+                                <input type="radio" class="first-question-inp" name="q-1-1" id="q-1-5">
+                                <label class="employer-label" for="q-1-5">
+                                    <div class="check-icon icon-5"></div>
+                                    <p class="employer-label-txt">Невежливость сотрудника</p>
+                                </label>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+
+
         <!-- <div class="range-section">
             <div class="container">
                 <div class="range__left-side">
@@ -202,5 +255,36 @@
     </style>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/range.js"></script>
+    <script>
+    //       var swiper = new Swiper('.swiper-container', {
+    //     speed: 700,
+    //     slidesPerView: 2.8,
+    //     spaceBetween: 30,
+    //     //   pagination: {
+    //     //     el: '.swiper-pagination',
+    //     //     clickable: true,
+    //     //   },
+    //     navigation: {
+    //     nextEl: '.swiper-button-next-unique',
+    //     prevEl: '.swiper-button-prev-unique'
+    // }
+    // });
+    var swiper = new Swiper('.swiper-container', {
+      speed: 700,
+      slidesPerView: 2.8,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+    //   loop: true,
+    //   loopFillGroupWithBlank: true,
+    //   pagination: {
+    //     el: '.swiper-pagination',
+    //     clickable: true,
+    //   },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    </script>
 </body>
 </html>

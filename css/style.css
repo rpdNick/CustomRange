@@ -375,6 +375,99 @@ body #main-container .range-section .range-scale-values {
   min-width: 246px;
 }
 
+.hidden-content .slide-box {
+  margin-top: 50px;
+}
+
+.hidden-content .slide-box .slides-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hidden-content .slide-box .swiper-container .swiper-slide input {
+  display: none;
+  opacity: 0;
+}
+
+.hidden-content .slide-box .swiper-container .swiper-slide input[type='radio']:checked + label .check-icon {
+  border: 1px solid #9F0002;
+}
+
+.hidden-content .slide-box .swiper-container .swiper-slide .employer-label {
+  cursor: pointer;
+}
+
+.hidden-content .slide-box .swiper-container .swiper-slide .employer-label .check-icon {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hidden-content .slide-box .swiper-container .swiper-slide .employer-label .icon-1 {
+  background-image: url("../img/scroll-icons/1.png");
+}
+
+.hidden-content .slide-box .swiper-container .swiper-slide .employer-label .icon-2 {
+  background-image: url("../img/scroll-icons/2.png");
+}
+
+.hidden-content .slide-box .swiper-container .swiper-slide .employer-label .icon-3 {
+  background-image: url("../img/scroll-icons/3.png");
+}
+
+.hidden-content .slide-box .swiper-container .swiper-slide .employer-label .icon-4 {
+  background-image: url("../img/scroll-icons/4.png");
+}
+
+.hidden-content .slide-box .swiper-container .swiper-slide .employer-label .icon-5 {
+  background-image: url("../img/scroll-icons/5.png");
+}
+
+.hidden-content .slide-box .swiper-container .swiper-slide .employer-label .employer-label-txt {
+  font-size: 11px;
+  text-align: center;
+}
+
+.hidden-content .slide-box .swiper-container .swiper-slide .office-label {
+  cursor: pointer;
+}
+
+.hidden-content .slide-box .swiper-container .swiper-slide .office-label .check-icon {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hidden-content .slide-box .swiper-container .swiper-slide .office-label .icon-1 {
+  background-image: url("../img/office-scroll-icons/1.png");
+}
+
+.hidden-content .slide-box .swiper-container .swiper-slide .office-label .icon-2 {
+  background-image: url("../img/office-scroll-icons/2.png");
+}
+
+.hidden-content .slide-box .swiper-container .swiper-slide .office-label .icon-3 {
+  background-image: url("../img/office-scroll-icons/3.png");
+}
+
+.hidden-content .slide-box .swiper-container .swiper-slide .office-label .icon-4 {
+  background-image: url("../img/office-scroll-icons/4.png");
+}
+
+.hidden-content .slide-box .swiper-container .swiper-slide .office-label .icon-5 {
+  background-image: url("../img/office-scroll-icons/5.png");
+}
+
+.hidden-content .slide-box .swiper-container .swiper-slide .office-label .office-label-txt {
+  font-size: 11px;
+  text-align: center;
+}
+
 @media (max-width: 430px) and (max-width: 430px) {
   .range-section .range-numbers .number-section {
     width: 9%;

@@ -41,9 +41,6 @@ function runRange(selector) {
 runRange('#range1');
 
 
-
-
-
 // const rangeThumb = document.querySelector('.range-thumb');
 // const leftSide = document.querySelector('.left-position');
 // console.log(leftSide)

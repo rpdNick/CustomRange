@@ -354,6 +354,85 @@ body {
     left: 52px;
     min-width: 246px;
 }
+.hidden-content{
+    .slide-box{
+        margin-top: 50px;
+        .slides-title{
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .swiper-container{
+            .swiper-slide{
+                input{
+                    display: none;
+                    opacity: 0;
+                }
+                input[type='radio']:checked + label .check-icon{
+                    border: 1px solid #9F0002;
+                }
+                .employer-label{
+                    cursor: pointer;
+                    .check-icon{
+                        width: 100px;
+                        height: 100px;
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                    .icon-1{
+                        background-image: url("../img/scroll-icons/1.png");
+                    }
+                    .icon-2{
+                        background-image: url("../img/scroll-icons/2.png");
+                    }
+                    .icon-3{
+                        background-image: url("../img/scroll-icons/3.png");
+                    }
+                    .icon-4{
+                        background-image: url("../img/scroll-icons/4.png");
+                    }
+                    .icon-5{
+                        background-image: url("../img/scroll-icons/5.png");
+                    }
+                    .employer-label-txt{
+                        font-size: 11px;
+                        text-align: center;
+                    }
+                }
+                .office-label{
+                    cursor: pointer;
+                    .check-icon{
+                        width: 100px;
+                        height: 100px;
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                    .icon-1{
+                        background-image: url("../img/office-scroll-icons/1.png");
+                    }
+                    .icon-2{
+                        background-image: url("../img/office-scroll-icons/2.png");
+                    }
+                    .icon-3{
+                        background-image: url("../img/office-scroll-icons/3.png");
+                    }
+                    .icon-4{
+                        background-image: url("../img/office-scroll-icons/4.png");
+                    }
+                    .icon-5{
+                        background-image: url("../img/office-scroll-icons/5.png");
+                    }
+                    .office-label-txt{
+                        font-size: 11px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media (max-width: 430px){
     @media (max-width: 430px){
