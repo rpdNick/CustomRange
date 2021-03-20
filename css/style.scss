@@ -396,6 +396,8 @@ body {
                 input[type='radio']:checked + label .employer-label-txt{
                     text-decoration: underline;
                     text-decoration-color: #9F0002;
+                    text-underline-position: under;
+                    text-underline-offset: -1px;
                     transition: 1s;
                  }
                 .employer-label{

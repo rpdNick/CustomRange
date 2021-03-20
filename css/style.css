@@ -420,6 +420,8 @@ body #main-container .range-section .range-scale-values {
   text-decoration: underline;
   -webkit-text-decoration-color: #9F0002;
           text-decoration-color: #9F0002;
+  text-underline-position: under;
+  text-underline-offset: -1px;
   -webkit-transition: 1s;
   transition: 1s;
 }
