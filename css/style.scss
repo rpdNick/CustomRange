@@ -13,7 +13,10 @@
     font-weight: normal;
     font-style: normal;
 }
-
+.range-slider{
+    position: relative;
+    z-index: 999;
+}
 .no-wrapp {
     white-space: nowrap;
 }
