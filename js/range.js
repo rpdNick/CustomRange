@@ -27,6 +27,7 @@ function runRange(selector) {
         drag: function(v) {
             if(v > 0){
                 $('.help-txt').fadeOut();
+                $('.hidden-content').fadeIn();
             }
             let rangeVal = Math.round(v / 10);
             console.log(rangeVal);

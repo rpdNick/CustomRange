@@ -85,7 +85,7 @@
             <input type="range" min="0" max="10" style="width: 1px; height: 1px; opacity: 0;" id="range1-val">
         </div>
 
-        <div class="hidden-content">
+        <div class="hidden-content" style="display: none;">
             <div class="slide-box employer-slider-box">
                 <p class="slides-title">Что Вас разочаровало?</p>
                 <!-- Swiper -->
@@ -179,17 +179,13 @@
     history.back(); history.forward();
     window.onpopstate = function () { history.go(1); };
 
-    let prevBtn = document.querySelector('.swiper-button-prev');
-    let naxtBnt = document.querySelector('.swiper-button-next');
-    console.log(naxtBnt);
-
-    $( ".swiper-button-next" ).trigger( "click" );
-
     var swiper = new Swiper('.swiper-container', {
       speed: 700,
       slidesPerView: 2.7,
       spaceBetween: 30,
       slidesPerGroup: 3,
+      observer: true,
+      observeParents: true,
     //   loop: true,
     //   loopFillGroupWithBlank: true,
     //   pagination: {
