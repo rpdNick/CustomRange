@@ -35,7 +35,10 @@ function runRange(selector) {
         },
         onSlideEnd: (p, v) => {
             prevV = v;
-        }
+        },
+        // onInit : function() {
+        //     this.output = $( '<div class="range-output" />' ).insertAfter( this.$range ).html( this.$element.val() );
+        // },
     });
 }
 
