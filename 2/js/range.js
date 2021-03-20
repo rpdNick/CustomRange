@@ -19,10 +19,10 @@ function runRange(selector) {
     let isScrollRight = null;
 
     var testResult = document.getElementById('test-result');
-console.log(testResult)
+    console.log(testResult)
     // Horizontal range slider
     rangeSlider(document.getElementById('range-slider-1'), {
-        value: 0,
+    
         drag: function(v) {
             let rangeVal = Math.round(v / 10);
             testResult.children[0].innerHTML = rangeVal;

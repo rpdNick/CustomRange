@@ -18,24 +18,28 @@ function runRange(selector) {
     let prevV = 0;
     let isScrollRight = null;
 
-    var testResult = document.getElementById('test-result');
-console.log(testResult)
-    // Horizontal range slider
-    rangeSlider(document.getElementById('range-slider-1'), {
-        value: 0,
-        drag: function(v) {
-            let rangeVal = Math.round(v / 10);
-            testResult.children[0].innerHTML = rangeVal;
-              $('.help-txt').fadeOut();
-            isScrollRight = rangeVal > prevV;
+    // to get val use 
+    // $('input[type="range"]').val()
+
+    $(selector + 'input[type="range"]').rangeslider({
+        polyfill: false,
+        disabledClass: 'rangeslider--disabled',
+        onSlide: (p, v) => {
+            $('.help-txt').fadeOut();
+            isScrollRight = v > prevV;
             for (let i = 0; i < 10; i++) {
-                i < rangeVal ?
+                i < v ?
                     parts[i].classList.remove('inactive') :
                     parts[i].classList.add('inactive');
             }
-        }
+        },
+        onSlideEnd: (p, v) => {
+            prevV = v;
+        },
+        // onInit : function() {
+        //     this.output = $( '<div class="range-output" />' ).insertAfter( this.$range ).html( this.$element.val() );
+        // },
     });
-
 }
 
 runRange('#range1');

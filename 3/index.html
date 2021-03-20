@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.0.5/rangeslider.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/range-slider.min.css">
-    <script src="./js/range-slider.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.0.5/rangeslider.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -81,13 +81,44 @@
             <div class="help-txt">
                 <span>проведите по шкале вправо или влево</span>
             </div>
-            <h3>Horizontal Slider</h3>
-            <div id="range-slider-1"></div>
-            <div class="test-result" id="test-result">
-                <span>0%</span>
-                <span>0%</span>
-                <span>0</span>
-              </div>
+            <div class="wrapper rang-wrapper">
+                <input type="range" value="0" min="0" max="10" step="1" class="diagram-bar" role="input-range">
+            </div>
+            <!-- <div class="range-scale-values">
+                <div class="range-scale-number">
+                    <span>0</span>    
+                </div>
+                <div class="range-scale-number">
+                    <span>1</span>    
+                </div>
+                <div class="range-scale-number">
+                    <span>2</span>    
+                </div>
+                <div class="range-scale-number">
+                    <span>3</span>    
+                </div>
+                <div class="range-scale-number">
+                    <span>4</span>    
+                </div>
+                <div class="range-scale-number">
+                    <span>5</span>    
+                </div>
+                <div class="range-scale-number">
+                    <span>6</span>    
+                </div>
+                <div class="range-scale-number">
+                    <span>7</span>    
+                </div>
+                <div class="range-scale-number">
+                    <span>8</span>    
+                </div>
+                <div class="range-scale-number">
+                    <span>9</span>    
+                </div>
+                <div class="range-scale-number">
+                    <span>10</span>    
+                </div>
+            </div> -->
         </div>
 
         <div class="hidden-content">
