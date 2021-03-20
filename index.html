@@ -82,7 +82,7 @@
                 <span>проведите по шкале вправо или влево</span>
             </div>
             <div class="wrapper rang-wrapper">
-                <input type="range" value="0" min="0" max="10">
+                <input type="range" value="0" min="0" max="10" step="any">
             </div>
             <!-- <div class="range-scale-values">
                 <div class="range-scale-number">
@@ -259,7 +259,7 @@
     history.pushState(null, null, location.href);
     history.back(); history.forward();
     window.onpopstate = function () { history.go(1); };
-    
+
     var swiper = new Swiper('.swiper-container', {
       speed: 700,
       slidesPerView: 2.8,
