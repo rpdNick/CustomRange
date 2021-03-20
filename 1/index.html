@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.0.5/rangeslider.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.0.5/rangeslider.min.js"></script>
     <title>Document</title>
@@ -31,6 +30,7 @@
         <div class="range-section" id="range1">
             <div class="container">
                 <div class="range-part inactive">
+                    <div class="big-line line"></div>
                     <div class="small-line line"></div>
                     <div class="small-line line"></div>
                     <div class="small-line line"></div>
@@ -40,46 +40,7 @@
                     <div class="small-line line"></div>
                     <div class="small-line line"></div>
                     <div class="small-line line"></div>
-                    <div class="big-line line"></div>
                 </div>
-            </div>
-            <div class="range-numbers">
-                <div class="number-section">
-                    <span class="number">0</span>
-                </div>
-                <div class="number-section">
-                    <span class="number">1</span>
-                </div>
-                <div class="number-section">
-                    <span class="number">2</span>
-                </div>
-                <div class="number-section">
-                    <span class="number">3</span>
-                </div>
-                <div class="number-section">
-                    <span class="number">4</span>
-                </div>
-                <div class="number-section">
-                    <span class="number">5</span>
-                </div>
-                <div class="number-section">
-                    <span class="number">6</span>
-                </div>
-                <div class="number-section">
-                    <span class="number">7</span>
-                </div>
-                <div class="number-section">
-                    <span class="number">8</span>
-                </div>
-                <div class="number-section">
-                    <span class="number">9</span>
-                </div>
-                <div class="number-section">
-                    <span class="number">10</span>
-                </div>
-            </div>
-            <div class="help-txt">
-                <span>проведите по шкале вправо или влево</span>
             </div>
             <div class="wrapper rang-wrapper">
                 <input type="range" value="0" min="0" max="10">
@@ -168,39 +129,6 @@
         </div> -->
         <p class="test" style="margin-top: 50px"></p>
     </div>
-    <style>
-        .for_line:after{
-            content: '';
-            width: 215px !important;
-        }
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            max-width: 100.357px;
-            /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
-        }
-    
-        @media screen and (max-width: 368px){
-            .for_line:after{
-                content: '';
-                width: 124px !important;
-            }
-        }
-    </style>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/range.js"></script>
 </body>
 </html>

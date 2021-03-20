@@ -24,7 +24,6 @@ function runRange(selector) {
     $(selector + ' input[type="range"]').rangeslider({
         polyfill: false,
         onSlide: (p, v) => {
-            $('.help-txt').fadeOut();
             isScrollRight = v > prevV;
             for (let i = 0; i < 10; i++) {
                 i < v ?

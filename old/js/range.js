@@ -1,8 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     // elements
     const rangeThumb = document.getElementById('range__thumb');
-    const leftSide = rangeThumb.previousElementSibling;
-    const rightSide = rangeThumb.nextElementSibling;
+    // const leftSide = rangeThumb.previousElementSibling;
+    // const rightSide = rangeThumb.nextElementSibling;
+    const leftSide = document.querySelector('.range__left-side');
+    const rightSide = document.querySelector('.range__right-side');
     let out = document.querySelector('.test');
 
     // The current position of mouse
@@ -59,7 +61,8 @@ document.addEventListener('DOMContentLoaded', function() {
             let newLeftWidth = (leftWidth + mdx) * 100 / containerWidth;
             newLeftWidth = Math.max(newLeftWidth, 0);
             newLeftWidth = Math.min(newLeftWidth, 100);
-            let rangeVal = Math.floor(newLeftWidth / 10);
+            // let rangeVal = Math.floor(newLeftWidth / 10);
+            let rangeVal = Math.round(newLeftWidth / 10);
             console.log(rangeVal)
             
             leftSide.style.width = `${newLeftWidth}%`;
@@ -87,7 +90,8 @@ document.addEventListener('DOMContentLoaded', function() {
             let newLeftWidth = (leftWidth + dx) * 100 / containerWidth;
             newLeftWidth = Math.max(newLeftWidth, 0);
             newLeftWidth = Math.min(newLeftWidth, 100);
-            let rangeVal = Math.floor(newLeftWidth / 10);
+            // let rangeVal = Math.floor(newLeftWidth / 10);
+            let rangeVal = Math.round(newLeftWidth / 10);
             console.log(rangeVal)
             
             leftSide.style.width = `${newLeftWidth}%`;
@@ -128,3 +132,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
     rangeThumb.addEventListener('touchstart', mouseDownHandler);
 });
+
+
+let bigLine = document.querySelectorAll('.big-scale-line');
+let bigLinePosition = 0;
+
+for(let i = 0; i < bigLine.length; i++){
+    bigLinePosition += 10;
+    console.log(bigLinePosition); 
+    bigLine[i].style.left = bigLinePosition + '%';
+}
