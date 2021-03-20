@@ -13,6 +13,17 @@
   font-style: normal;
 }
 
+.swiper-button-next {
+  right: auto;
+  left: -32px;
+  top: 44px;
+}
+
+.swiper-button-prev {
+  left: -33px;
+  top: 93px;
+}
+
 .range-slider {
   position: relative;
   z-index: 999;
@@ -148,6 +159,7 @@ body #main-container .worker-wrapper .worker-info .box .worker-position {
 body #main-container .range-section {
   margin-top: 30px;
   position: relative;
+  height: 107px;
 }
 
 body #main-container .range-section .container {
@@ -375,13 +387,16 @@ body #main-container .range-section .range-scale-values {
   color: #fff;
   font-size: 11px;
   position: absolute;
-  bottom: 27px;
+  bottom: 11px;
   left: 26px;
   min-width: 224px;
 }
 
 .hidden-content .slide-box {
   margin-top: 5px;
+  width: 90%;
+  margin-left: auto;
+  position: relative;
 }
 
 .hidden-content .slide-box .slides-title {
@@ -396,7 +411,17 @@ body #main-container .range-section .range-scale-values {
 }
 
 .hidden-content .slide-box .swiper-container .swiper-slide input[type='radio']:checked + label .check-icon {
-  border: 1px solid #9F0002;
+  background-color: #9F0002;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.hidden-content .slide-box .swiper-container .swiper-slide input[type='radio']:checked + label .employer-label-txt {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #9F0002;
+          text-decoration-color: #9F0002;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .hidden-content .slide-box .swiper-container .swiper-slide .employer-label {
@@ -404,36 +429,53 @@ body #main-container .range-section .range-scale-values {
 }
 
 .hidden-content .slide-box .swiper-container .swiper-slide .employer-label .check-icon {
-  width: 100px;
-  height: 100px;
-  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  margin: 0 auto;
+  background-color: #d1d1d1;
 }
 
 .hidden-content .slide-box .swiper-container .swiper-slide .employer-label .icon-1 {
-  background-image: url("../img/scroll-icons/1.png");
+  width: 77px;
+  height: 96px;
+  -webkit-mask-image: url(../img/scroll-icons/1.png);
+  -webkit-mask-size: 77px;
 }
 
 .hidden-content .slide-box .swiper-container .swiper-slide .employer-label .icon-2 {
-  background-image: url("../img/scroll-icons/2.png");
+  width: 108px;
+  height: 96px;
+  -webkit-mask-image: url(../img/scroll-icons/2.png);
+  -webkit-mask-size: 112px;
 }
 
 .hidden-content .slide-box .swiper-container .swiper-slide .employer-label .icon-3 {
-  background-image: url("../img/scroll-icons/3.png");
+  width: 50px;
+  height: 96px;
+  -webkit-mask-image: url("../img/scroll-icons/3.png");
+  -webkit-mask-size: 50px;
 }
 
 .hidden-content .slide-box .swiper-container .swiper-slide .employer-label .icon-4 {
-  background-image: url("../img/scroll-icons/4.png");
+  width: 77px;
+  height: 96px;
+  -webkit-mask-image: url("../img/scroll-icons/4.png");
+  -webkit-mask-size: 77px;
 }
 
 .hidden-content .slide-box .swiper-container .swiper-slide .employer-label .icon-5 {
-  background-image: url("../img/scroll-icons/5.png");
+  width: 77px;
+  height: 96px;
+  -webkit-mask-image: url("../img/scroll-icons/5.png");
+  -webkit-mask-size: 77px;
 }
 
 .hidden-content .slide-box .swiper-container .swiper-slide .employer-label .employer-label-txt {
   font-size: 11px;
   text-align: center;
+  font-weight: 600;
+  color: #000;
 }
 
 .hidden-content .slide-box .swiper-container .swiper-slide .office-label {

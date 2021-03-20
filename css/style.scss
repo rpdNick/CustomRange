@@ -13,6 +13,15 @@
     font-weight: normal;
     font-style: normal;
 }
+.swiper-button-next{
+    right: auto;
+    left: -32px;
+    top: 44px;
+}
+.swiper-button-prev{
+    left: -33px;
+    top: 93px
+}
 .range-slider{
     position: relative;
     z-index: 999;
@@ -139,6 +148,7 @@ body {
         .range-section {
             margin-top: 30px;
             position: relative;
+            height: 107px;
             .container {
                 align-items: center;
                 display: flex;
@@ -358,13 +368,16 @@ body {
     color: #fff;
     font-size: 11px;
     position: absolute;
-    bottom: 27px;
+    bottom: 11px;
     left: 26px;
     min-width: 224px;
 }
 .hidden-content{
     .slide-box{
         margin-top: 5px;
+        width: 90%;
+        margin-left: auto;
+        position: relative;
         .slides-title{
             font-size: 15px;
             font-weight: 600;
@@ -377,35 +390,58 @@ body {
                     opacity: 0;
                 }
                 input[type='radio']:checked + label .check-icon{
-                    border: 1px solid #9F0002;
+                   background-color: #9F0002;
+                   transition: 1s;
                 }
+                input[type='radio']:checked + label .employer-label-txt{
+                    text-decoration: underline;
+                    text-decoration-color: #9F0002;
+                    transition: 1s;
+                 }
                 .employer-label{
                     cursor: pointer;
                     .check-icon{
-                        width: 100px;
-                        height: 100px;
-                        background-size: cover;
                         background-position: center;
-                        background-repeat: no-repeat;
+                        background-size: contain;
+                        -webkit-mask-repeat: no-repeat;
+                        margin: 0 auto;
+                        background-color: #d1d1d1;
                     }
                     .icon-1{
-                        background-image: url("../img/scroll-icons/1.png");
+                        width: 77px;
+                        height: 96px;
+                        -webkit-mask-image: url(../img/scroll-icons/1.png);
+                        -webkit-mask-size: 77px;
                     }
                     .icon-2{
-                        background-image: url("../img/scroll-icons/2.png");
+                        width: 108px;
+                        height: 96px;
+                        -webkit-mask-image: url(../img/scroll-icons/2.png);
+                        -webkit-mask-size: 112px;
                     }
                     .icon-3{
-                        background-image: url("../img/scroll-icons/3.png");
+                        width: 50px;
+                        height: 96px;
+                        -webkit-mask-image: url('../img/scroll-icons/3.png');
+                        -webkit-mask-size: 50px;
                     }
                     .icon-4{
-                        background-image: url("../img/scroll-icons/4.png");
+                        width: 77px;
+                        height: 96px;
+                        -webkit-mask-image: url('../img/scroll-icons/4.png');
+                        -webkit-mask-size: 77px;
                     }
                     .icon-5{
-                        background-image: url("../img/scroll-icons/5.png");
+                        width: 77px;
+                        height: 96px;
+                        -webkit-mask-image: url('../img/scroll-icons/5.png');
+                        -webkit-mask-size: 77px;
                     }
                     .employer-label-txt{
                         font-size: 11px;
                         text-align: center;
+                        font-weight: 600;
+                        color: #000;
                     }
                 }
                 .office-label{

@@ -29,7 +29,7 @@ function runRange(selector) {
                 $('.help-txt').fadeOut();
             }
             let rangeVal = Math.round(v / 10);
-            // console.log(rangeVal);
+            console.log(rangeVal);
             $('#range1-val').val(rangeVal);
         
             for (let i = 0; i < 10; i++) {
