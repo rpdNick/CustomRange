@@ -256,19 +256,10 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/range.js"></script>
     <script>
-    //       var swiper = new Swiper('.swiper-container', {
-    //     speed: 700,
-    //     slidesPerView: 2.8,
-    //     spaceBetween: 30,
-    //     //   pagination: {
-    //     //     el: '.swiper-pagination',
-    //     //     clickable: true,
-    //     //   },
-    //     navigation: {
-    //     nextEl: '.swiper-button-next-unique',
-    //     prevEl: '.swiper-button-prev-unique'
-    // }
-    // });
+    history.pushState(null, null, location.href);
+    history.back(); history.forward();
+    window.onpopstate = function () { history.go(1); };
+    
     var swiper = new Swiper('.swiper-container', {
       speed: 700,
       slidesPerView: 2.8,
