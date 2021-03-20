@@ -352,4 +352,70 @@ body {
     position: absolute;
     bottom: -21px;
     left: 52px;
+    min-width: 246px;
+}
+
+@media (max-width: 430px){
+    @media (max-width: 430px){
+        .range-section .range-numbers .number-section{
+            width: 9%;
+        }
+        .range-section .range-numbers .number-section:nth-child(3) .number{
+            left: 1px;
+        }
+        .range-section .range-numbers .number-section:nth-child(4) .number{
+            left: 5px;
+        }
+        .range-section .range-numbers .number-section:nth-child(5) .number{
+            left: 7px;
+        }
+        .range-section .range-numbers .number-section:nth-child(6) .number{
+            left: 12px;
+        }
+        .range-section .range-numbers .number-section:nth-child(7) .number{
+            left: 16px;
+        }
+        .range-section .range-numbers .number-section:nth-child(8) .number{
+            left: 20px;
+        }
+        .range-section .range-numbers .number-section:nth-child(9) .number{
+            left: 24px;
+        }
+        .range-section .range-numbers .number-section:nth-child(10) .number{
+            left: 27px;
+        }
+        .range-section .range-numbers .number-section:last-child .number{
+            left: 27px;
+        }
+    }
+}
+
+@media (max-width: 380px){
+    .range-section .range-numbers .number-section{
+        width: 9%;
+    }
+    .range-section .range-numbers .number-section:nth-child(4) .number{
+        left: 4px;
+    }
+    .range-section .range-numbers .number-section:nth-child(5) .number{
+        left: 6px;
+    }
+    .range-section .range-numbers .number-section:nth-child(6) .number{
+        left: 11px;
+    }
+    .range-section .range-numbers .number-section:nth-child(7) .number{
+        left: 14px;
+    }
+    .range-section .range-numbers .number-section:nth-child(8) .number{
+        left: 17px;
+    }
+    .range-section .range-numbers .number-section:nth-child(9) .number{
+        left: 21px;
+    }
+    .range-section .range-numbers .number-section:nth-child(10) .number{
+        left: 24px;
+    }
+    .range-section .range-numbers .number-section:last-child .number{
+        left: 23px;
+    }
 }
