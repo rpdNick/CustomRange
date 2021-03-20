@@ -15,23 +15,28 @@ function runRange(selector) {
     });
 
     const parts = parent.querySelectorAll('.range-part');
+    
     let prevV = 0;
     let isScrollRight = null;
 
-    var testResult = document.getElementById('test-result');
-console.log(testResult)
+    // var testResult = document.getElementById('test-result');
+    // console.log(testResult)
     // Horizontal range slider
     rangeSlider(document.getElementById('range-slider-1'), {
         value: 0,
         drag: function(v) {
+            if(v > 0){
+                $('.help-txt').fadeOut();
+            }
             let rangeVal = Math.round(v / 10);
-            testResult.children[0].innerHTML = rangeVal;
-              $('.help-txt').fadeOut();
-            isScrollRight = rangeVal > prevV;
+            // console.log(rangeVal);
+            $('#range1-val').val(rangeVal);
+        
             for (let i = 0; i < 10; i++) {
                 i < rangeVal ?
                     parts[i].classList.remove('inactive') :
                     parts[i].classList.add('inactive');
+                    
             }
         }
     });
