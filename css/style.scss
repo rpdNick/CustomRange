@@ -15,12 +15,40 @@
 }
 .swiper-button-next{
     right: auto;
-    left: -32px;
-    top: 44px;
+    left: -42px;
+    top: 70px;
+    color:#000;
+    outline: none;
+    height: 27px;
 }
 .swiper-button-prev{
-    left: -33px;
-    top: 93px
+    left: -42px;
+    top: 103px;
+    color:#000;
+    outline: none;
+    height: 27px;
+}
+.swiper-button-next .line, .swiper-button-prev .line{
+    height: 1px;
+    background:#000;
+    position: absolute;
+    transition: 0.5s;
+    width: 0px;
+}
+// .swiper-button-next:hover .line{
+//     width: 23px;
+//     right: 10px;
+// }
+// .swiper-button-prev:hover .line{
+//     width: 23px;
+//     left: 10px;
+// }
+
+.swiper-button-disabled .line{
+   
+}
+.swiper-button-next:after, .swiper-button-prev::after{
+    font-size: 20px;
 }
 .range-slider{
     position: relative;
@@ -51,6 +79,7 @@
     background-color: #e60028;
     top: 8px;
     border-radius: 50%;
+    cursor: pointer;
 }
 .range-slider-track .dragger::before{
     content: '';
@@ -408,75 +437,248 @@ body {
                         -webkit-mask-repeat: no-repeat;
                         margin: 0 auto;
                         background-color: #d1d1d1;
+                        transition: 0.5s;
                     }
                     .icon-1{
-                        width: 77px;
-                        height: 96px;
+                        width: 67px;
+                        height: 82px;
                         -webkit-mask-image: url(../img/scroll-icons/1.png);
-                        -webkit-mask-size: 77px;
+                        -webkit-mask-size: 67px;
                     }
                     .icon-2{
-                        width: 108px;
-                        height: 96px;
+                        width: 95px;
+                        height: 82px;
                         -webkit-mask-image: url(../img/scroll-icons/2.png);
-                        -webkit-mask-size: 112px;
+                        -webkit-mask-size: 95px;
                     }
                     .icon-3{
-                        width: 50px;
-                        height: 96px;
-                        -webkit-mask-image: url('../img/scroll-icons/3.png');
-                        -webkit-mask-size: 50px;
+                        width: 40px;
+                        height: 75px;
+                        -webkit-mask-image: url(../img/scroll-icons/3.png);
+                        -webkit-mask-size: 40px;
+                        margin-top: 7px;
                     }
                     .icon-4{
-                        width: 77px;
-                        height: 96px;
-                        -webkit-mask-image: url('../img/scroll-icons/4.png');
-                        -webkit-mask-size: 77px;
+                        width: 75px;
+                        height: 82px;
+                        -webkit-mask-image: url(../img/scroll-icons/4.png);
+                        -webkit-mask-size: 75px;
                     }
                     .icon-5{
-                        width: 77px;
-                        height: 96px;
-                        -webkit-mask-image: url('../img/scroll-icons/5.png');
-                        -webkit-mask-size: 77px;
+                        width: 75px;
+                        height: 82px;
+                        -webkit-mask-image: url(../img/scroll-icons/5.png);
+                        -webkit-mask-size: 75px;
                     }
                     .employer-label-txt{
                         font-size: 11px;
                         text-align: center;
                         font-weight: 600;
                         color: #000;
+                        max-width: 85px;
                     }
                 }
                 .office-label{
                     cursor: pointer;
                     .check-icon{
-                        width: 100px;
-                        height: 100px;
-                        background-size: cover;
                         background-position: center;
-                        background-repeat: no-repeat;
+                        background-size: contain;
+                        -webkit-mask-repeat: no-repeat;
+                        margin: 0 auto;
+                        background-color: #807d7d;
+                        transition: 0.5s;
                     }
                     .icon-1{
-                        background-image: url("../img/office-scroll-icons/1.png");
+                        width: 67px;
+                        height: 82px;
+                        -webkit-mask-image: url(../img/office-scroll-icons/1.png);
+                        -webkit-mask-size: 67px;
                     }
                     .icon-2{
-                        background-image: url("../img/office-scroll-icons/2.png");
+                        width: 70px;
+                        height: 82px;
+                        -webkit-mask-image: url(../img/office-scroll-icons/2.png);
+                        -webkit-mask-size: 70px;
                     }
                     .icon-3{
-                        background-image: url("../img/office-scroll-icons/3.png");
+                        width: 70px;
+                        height: 82px;
+                        -webkit-mask-image: url(../img/office-scroll-icons/3.png);
+                        -webkit-mask-size: 70px;
                     }
                     .icon-4{
-                        background-image: url("../img/office-scroll-icons/4.png");
+                        width: 75px;
+                        height: 82px;
+                        -webkit-mask-image: url(../img/office-scroll-icons/4.png);
+                        -webkit-mask-size: 75px;
                     }
                     .icon-5{
-                        background-image: url("../img/office-scroll-icons/5.png");
+                        width: 83px;
+                        height: 82px;
+                        -webkit-mask-image: url(../img/office-scroll-icons/5.png);
+                        -webkit-mask-size: 83px;
                     }
                     .office-label-txt{
                         font-size: 11px;
                         text-align: center;
+                        font-weight: 600;
+                        color: #000;
                     }
                 }
             }
         }
+    }
+    .comment-wrapper{
+        margin-top: 30px;
+        //display: none;
+          .comment{
+              outline: none;
+              border: none;
+              border-bottom: 1px solid #807d7d;
+              font-size: 14px;
+              color: #000;
+              font-weight: 600;
+              width: 100%;
+              padding: 10px 0px 10px 0px;
+              background-color: transparent;
+              max-width: 530px;
+              height: 36px;
+              resize: none;
+              overflow: auto;
+              border-radius: 0;
+          }
+          .comment:focus{
+            border-bottom: 1px solid #e60028;
+            transition: 0.5s;
+          }
+          .comment::placeholder{
+              font-size: 14px;
+              color: #807d7d;
+              font-weight: normal;
+          }
+        .comment-error{
+          font-size: 12px;
+          margin-top: 5px;
+          color: #E9041E;
+          display: none;
+        }
+      }
+      .clip-wrapper{
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .audio-help-txt{
+            font-size: 14px;
+            color: #807d7d;
+            margin: 20px 20px 0 0;
+        }
+        .clip-icon{
+          position: relative;
+          .hide-input{
+            z-index: -1;
+            width: 0.1px;
+            height: 0.1px;
+            opacity: 0;
+          }
+          .file-filling-icon{
+            position: absolute;
+            width: 13px;
+            height: 13px;
+            top: 21px;
+            right: -1px;
+            background-color: #E1032E;
+            border-radius: 50%;
+            display: none;
+            .file-count{
+                color: #fff;
+                font-size: 11px;
+                position: relative;
+                bottom: 4px;
+                left: 3px;
+                font-weight: 600;
+            }
+          }
+          .add-new-file{
+            height: 40px;
+            width: 40px;
+            display: block;
+            .icon{
+              width: 40px;
+              height: 40px;
+            }
+          }
+        }
+        .clip-inputs-cont{
+          position: absolute;
+          right: 127px;
+          opacity: 0;
+          top: -13px;
+          display: none;
+          label{
+            width: 45px;
+            display: block;
+            height: 45px;
+            position: absolute;
+          }
+          label input{
+            display: none;
+          }
+        }
+      }
+      .office-wrapper{
+          margin-top: 30px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          .office-photo{
+            width: 55%;
+            max-width: 218px;
+            img{
+                width: 100%;
+            } 
+          }
+          .office-info{
+            margin-left: 20px;
+            width: calc(45% - 20px);
+            color: #000;
+            position: relative;
+            font-size: 16px;
+            .office-name{
+                position: relative;
+            }
+            .office-name::before{
+                content:'';
+                display: inline-block;
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background: #000;
+                top: 20px;
+                left: 20px;
+            }
+          }
+      }
+      .btn-wrapper{
+        margin: 50px 0px 5px 0px;
+        display: flex;
+        justify-content: center;
+        //display: none;
+      .submit-btn{
+          font-size: 15px;
+          background-color: #E9041E;
+          border: none;
+          border-radius: 5px;
+          outline: none;
+          color: #FFFFFF;
+          position: relative;
+          cursor: pointer;
+          margin: 0;
+          padding: 10px 30px;
+      }
     }
 }
 

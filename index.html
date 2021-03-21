@@ -16,6 +16,7 @@
         <div class="header">
             <img class="logo-img" src="./img/logo.svg" alt="logo">
         </div>
+        <form action="">
         <div class="worker-wrapper">
             <div class="worker-photo">
                 <img src="./img/worker.png" alt="photo">
@@ -85,9 +86,9 @@
             <input type="range" min="0" max="10" style="width: 1px; height: 1px; opacity: 0;" id="range1-val">
         </div>
 
-        <div class="hidden-content" style="display: none;">
+        <div class="hidden-content">
             <div class="slide-box employer-slider-box">
-                <p class="slides-title">Что Вас разочаровало?</p>
+                <p class="slides-title">ВАC разочаровало:</p>
                 <!-- Swiper -->
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
@@ -131,11 +132,163 @@
                     <div class="swiper-pagination"></div>
                 </div>
                 <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next">
+                    <div class="line"></div>
+                </div>
+                <div class="swiper-button-prev">
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="comment-wrapper">
+                <textarea class="comment" name="step_o_desc" placeholder="Напишите комментарий"></textarea>
+                <p class="comment-error">Поле обязательно к заполнению</p>
+            </div>
+            <div class="clip-wrapper">
+                <p class="audio-help-txt">или оставьте аудио-комментарий</p>
+                <div class="clip-icon">
+                    <i class="file-filling-icon" id="file-filling-icon"><span class="file-count" id="file-count">1</span></i>
+                    <input type="file" multiple accept="audio/mp4, .mp3,video/mp4, .MOV, video"
+                        id="add-file" class="hide-input" multiple="">
+                    <label for="add-file" class="add-new-file">
+                        <img class="icon" id="icon" src="img/clip-icon.svg">
+                    </label>
+                </div>
+            </div>
+            <div class="office-wrapper">
+                <div class="office-photo">
+                    <img src="./img/office.png" alt="photo">
+                </div>
+                <div class="office-info">
+                    <p class="worker-question">Оцените офис <span class="office-name">«Красные ворота»</span></p>
+                </div>
+            </div>
+            <div class="range-section" id="range2">
+                <div class="container">
+                    <div class="range-part inactive">
+                        <div class="small-line line"></div>
+                        <div class="small-line line"></div>
+                        <div class="small-line line"></div>
+                        <div class="small-line line"></div>
+                        <div class="middle-line line"></div>
+                        <div class="small-line line"></div>
+                        <div class="small-line line"></div>
+                        <div class="small-line line"></div>
+                        <div class="small-line line"></div>
+                        <div class="big-line line"></div>
+                    </div>
+                </div>
+                <div class="range-numbers">
+                    <div class="number-section">
+                        <span class="number">0</span>
+                    </div>
+                    <div class="number-section">
+                        <span class="number">1</span>
+                    </div>
+                    <div class="number-section">
+                        <span class="number">2</span>
+                    </div>
+                    <div class="number-section">
+                        <span class="number">3</span>
+                    </div>
+                    <div class="number-section">
+                        <span class="number">4</span>
+                    </div>
+                    <div class="number-section">
+                        <span class="number">5</span>
+                    </div>
+                    <div class="number-section">
+                        <span class="number">6</span>
+                    </div>
+                    <div class="number-section">
+                        <span class="number">7</span>
+                    </div>
+                    <div class="number-section">
+                        <span class="number">8</span>
+                    </div>
+                    <div class="number-section">
+                        <span class="number">9</span>
+                    </div>
+                    <div class="number-section">
+                        <span class="number">10</span>
+                    </div>
+                </div>
+                <!-- <div class="help-txt">
+                    <span>проведите по шкале вправо или влево</span>
+                </div> -->
+                <div id="range-slider-2"></div>
+                <input type="range" min="0" max="10" style="width: 1px; height: 1px; opacity: 0;" id="range1-val">
+            </div>
+            <div class="slide-box office-slider-box">
+                <p class="slides-title">ВАC разочаровало:</p>
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                                <input type="radio" class="first-question-inp" name="q-2-1" id="q-2-1">
+                                <label class="office-label" for="q-2-1">
+                                    <div class="check-icon icon-1"></div>
+                                    <p class="office-label-txt">#НЕжелание Помочь</p>
+                                </label>
+                        </div>
+                        <div class="swiper-slide">
+                                <input type="radio" class="first-question-inp" name="q-2-1" id="q-2-2">
+                                <label class="office-label" for="q-2-2">
+                                    <div class="check-icon icon-2"></div>
+                                    <p class="office-label-txt">#НЕрешён Вопрос</p>
+                                </label>
+                        </div>
+                        <div class="swiper-slide">
+                                <input type="radio" class="first-question-inp" name="q-2-1" id="q-2-3">
+                                <label class="office-label" for="q-2-3">
+                                    <div class="check-icon icon-3"></div>
+                                    <p class="office-label-txt">#Медленное Обслуживание</p>
+                                </label>
+                        </div>
+                        <div class="swiper-slide">
+                                <input type="radio" class="first-question-inp" name="q-2-1" id="q-2-4">
+                                <label class="office-label" for="q-2-4">
+                                    <div class="check-icon icon-4"></div>
+                                    <p class="office-label-txt">#НЕзнает Продукт Процесс</p>
+                                </label>
+                        </div>
+                        <div class="swiper-slide">
+                                <input type="radio" class="first-question-inp" name="q-2-1" id="q-2-5">
+                                <label class="office-label" for="q-2-5">
+                                    <div class="check-icon icon-5"></div>
+                                    <p class="office-label-txt">#Грубость Сотрудника</p>
+                                </label>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next">
+                    <div class="line"></div>
+                </div>
+                <div class="swiper-button-prev">
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="comment-wrapper">
+                <textarea class="comment" name="step_o_desc" placeholder="Напишите комментарий"></textarea>
+                <p class="comment-error">Поле обязательно к заполнению</p>
+            </div>
+            <div class="clip-wrapper">
+                <div class="clip-icon">
+                    <i class="file-filling-icon" id="office-filling-icon"><span class="file-count" id="office-file-count">1</span></i>
+                    <input type="file" multiple accept="audio/mp4, .mp3,video/mp4, .MOV, video"
+                        id="office-add-file" class="hide-input" multiple="">
+                    <label for="office-add-file" class="add-new-file">
+                        <img class="icon" id="office-icon" src="img/clip-icon.svg">
+                    </label>
+                </div>
+            </div>
+            <div class="btn-wrapper">
+                <button class="submit-btn" type="submit">Завершить опрос</button>
             </div>
         </div>
-        <p class="test" style="margin-top: 50px"></p>
+        </form>
     </div>
     <style>
         .for_line:after{
@@ -179,7 +332,29 @@
     history.back(); history.forward();
     window.onpopstate = function () { history.go(1); };
 
-    var swiper = new Swiper('.swiper-container', {
+     // Check attachments
+     let file = document.getElementById('add-file');
+        file.addEventListener('change', () => {
+            fileVal = file.value;
+            if (fileVal) {
+                $('#file-filling-icon').show();
+                $('#icon').attr('src','img/clip-icon-active.svg');
+                $('#file-count').text(file.files.length);
+                $('.audio-help-txt').hide();
+            }
+        });
+
+        let officeFile = document.getElementById('office-add-file');
+        officeFile.addEventListener('change', () => {
+            fileVal = officeFile.value;
+            if (fileVal) {
+                $('#office-filling-icon').show();
+                $('#office-icon').attr('src','img/clip-icon-active.svg');
+                $('#office-file-count').text(officeFile.files.length);
+            }
+        });
+
+    var swiper = new Swiper('.employer-slider-box .swiper-container', {
       speed: 700,
       slidesPerView: 2.7,
       spaceBetween: 30,
@@ -193,8 +368,27 @@
     //     clickable: true,
     //   },
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.employer-slider-box .swiper-button-next',
+        prevEl: '.employer-slider-box .swiper-button-prev',
+      },
+    });
+
+    var swiper = new Swiper('.office-slider-box .swiper-container', {
+      speed: 700,
+      slidesPerView: 2.7,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      observer: true,
+      observeParents: true,
+    //   loop: true,
+    //   loopFillGroupWithBlank: true,
+    //   pagination: {
+    //     el: '.swiper-pagination',
+    //     clickable: true,
+    //   },
+      navigation: {
+        nextEl: '.office-slider-box .swiper-button-next',
+        prevEl: '.office-slider-box .swiper-button-prev',
       },
     });
     </script>
