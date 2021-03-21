@@ -672,6 +672,7 @@ body #main-container .range-section .range-scale-values {
   height: 40px;
   width: 40px;
   display: block;
+  cursor: pointer;
 }
 
 .hidden-content .clip-wrapper .clip-icon .add-new-file .icon {
