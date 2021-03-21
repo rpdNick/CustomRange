@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3455081-9ad6-4a78-9abb-08203e9bdb89" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/employers-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/employers-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employers-page-style/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/employers-page-style/style.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/employers-page-style/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employers-style/style/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/employers-style/style/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employers-style/style/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/employers-style/style/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +26,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -35,7 +38,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1616341979534</updated>
-      <workItem from="1616341981804" duration="202000" />
+      <workItem from="1616341981804" duration="903000" />
+      <workItem from="1616343458292" duration="78000" />
     </task>
     <servers />
   </component>
