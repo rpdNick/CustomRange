@@ -113,7 +113,7 @@
 
 body {
   font-family: 'MyriadPro';
-  overflow: hidden; }
+  overflow-x: hidden; }
   body #main-container {
     max-width: 520px;
     padding: 30px 20px;

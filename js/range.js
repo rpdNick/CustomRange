@@ -80,7 +80,7 @@ function runRange(selector) {
     let isScrollRight = null;
 
     let wscaleNumbers = document.querySelectorAll('.wr-range-number');
-
+    let workerInputs = document.querySelectorAll('.first-question-inp');
     // Horizontal range slider
     rangeSlider(document.getElementById('range-slider-1'), {
         value: 0,
@@ -113,7 +113,7 @@ function runRange(selector) {
                     // console.log($(sliderItems)[i]);
                    $(sliderItems[i]).find(".check-icon").css({'-webkit-mask-image': `url("${employerSituation[i].url}")`});
                    $(sliderItems[i]).find(".employer-label-txt").text(employerSituation[i].text);
-                   
+                    workerInputs[i].value = employerSituation[i].text;
                 
 
                    $('.employer-slider-box .slides-title').text('ВАC разочаровало:');
@@ -135,6 +135,7 @@ function runRange(selector) {
                     // console.log($(sliderItems[i]).find(".check-icon"));
                     $(sliderItems[i]).find(".check-icon").css({'-webkit-mask-image': `url("${employerSituation[i].url}")`});
                     $(sliderItems[i]).find(".employer-label-txt").text(employerSituation[i].text);
+                    workerInputs[i].value = employerSituation[i].text;
                 }
                 $('.employer-slider-box .slides-title').text('ВАМ понравилось больше всего:');
            }
@@ -168,6 +169,7 @@ function runRange2(selector) {
     let prevV = 0;
     let isScrollRight = null;
     let officeScaleNumbers = document.querySelectorAll('.of-range-number');
+    let officeInputs = document.querySelectorAll('.second-question-inp');
     // Horizontal range slider
     rangeSlider(document.getElementById('range-slider-2'), {
         value: 0,
@@ -184,6 +186,8 @@ function runRange2(selector) {
                 let officeSituation = officeStateObj.situation1;
                 for (let i = 0; i < officeSliderItems.length; i++){
                     $(officeSliderItems[i]).find(".office-label-txt").text(officeSituation[i].text);
+                    officeInputs[i].value = officeSituation[i].text;
+                    console.log(officeInputs[0].value)
                 }
                 $('.office-slider-box .slides-title').text('ВАС разочаровало:');
                 $('.point10').hide();
@@ -192,6 +196,7 @@ function runRange2(selector) {
                 let officeSituation = officeStateObj.situation1;
                 for (let i = 0; i < officeSliderItems.length; i++){
                     $(officeSliderItems[i]).find(".office-label-txt").text(officeSituation[i].text);
+                    officeInputs[i].value = officeSituation[i].text;
                 }
                 $('.office-slider-box .slides-title').text('ВАМ испортило впечатление:');
             }
@@ -199,6 +204,7 @@ function runRange2(selector) {
                 let officeSituation = officeStateObj.situation2;
                 for (let i = 0; i < officeSliderItems.length; i++){
                     $(officeSliderItems[i]).find(".office-label-txt").text(officeSituation[i].text);
+                    officeInputs[i].value = officeSituation[i].text;
                 }
                 $('.office-slider-box .slides-title').text('ВАМ понравилось больше всего:');
             }
