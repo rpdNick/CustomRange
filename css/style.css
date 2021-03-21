@@ -11,28 +11,41 @@
   font-style: normal; }
 .swiper-button-next {
   right: auto;
-  left: -42px;
-  top: 70px;
+  left: -21px;
+  top: 71px;
   color: #000;
   outline: none;
   height: 27px; }
 
 .swiper-button-prev {
-  left: -42px;
-  top: 103px;
+  left: -52px;
+  top: 71px;
   color: #000;
   outline: none;
   height: 27px; }
 
 .swiper-button-next .line, .swiper-button-prev .line {
-  height: 1px;
+  height: 1.5px;
   background: #000;
   position: absolute;
   transition: 0.5s;
   width: 0px; }
 
+.swiper-button-next .line {
+  right: 9px; }
+
+.swiper-button-prev .line {
+  left: 9px;
+  top: 13px; }
+
+.swiper-button-next:hover .line {
+  width: 23px !important; }
+
+.swiper-button-prev:hover .line {
+  width: 23px !important; }
+
 .swiper-button-next:after, .swiper-button-prev::after {
-  font-size: 20px; }
+  font-size: 21px; }
 
 .range-slider {
   position: relative;
@@ -54,6 +67,9 @@
   width: 115px;
   height: 2px;
   background: #000; }
+
+.range-slider-track {
+  cursor: auto; }
 
 .range-slider-track .dragger {
   width: 15px;
@@ -86,7 +102,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  left: 12.6px;
+  left: 12.2px;
   top: -20px; }
 
 .rangeslider--horizontal {
@@ -295,6 +311,12 @@ body {
     opacity: 0; }
   .hidden-content .slide-box .swiper-container .swiper-slide input[type='radio']:checked + label .check-icon {
     background-color: #9F0002;
+    transition: 1s; }
+  .hidden-content .slide-box .swiper-container .swiper-slide input[type='radio']:checked + label .office-label-txt {
+    text-decoration: underline;
+    text-decoration-color: #9F0002;
+    text-underline-position: under;
+    text-underline-offset: -1px;
     transition: 1s; }
   .hidden-content .slide-box .swiper-container .swiper-slide input[type='radio']:checked + label .employer-label-txt {
     text-decoration: underline;
@@ -510,7 +532,32 @@ body {
     position: relative;
     cursor: pointer;
     margin: 0;
-    padding: 10px 20px; }
+    padding: 9px 20px;
+    overflow: hidden; }
+  .hidden-content .btn-wrapper .submit-btn::after {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    height: 118%;
+    left: -23%;
+    top: -3px;
+    bottom: 0px;
+    transform: skew(-27deg);
+    transition-duration: 0.6s;
+    transform-origin: top left;
+    width: 0; }
+  .hidden-content .btn-wrapper .submit-btn:hover {
+    color: #fff; }
+  .hidden-content .btn-wrapper .submit-btn::before,
+  .hidden-content .btn-wrapper .submit-btn::after {
+    background: #e60028;
+    content: '';
+    position: absolute;
+    z-index: -1; }
+  .hidden-content .btn-wrapper .submit-btn:hover:after {
+    height: 112%;
+    width: 135%; }
 
 @media (max-width: 430px) and (max-width: 430px) {
   .range-section .range-numbers .number-section {

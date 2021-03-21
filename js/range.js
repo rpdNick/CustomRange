@@ -34,7 +34,7 @@ employerStateObj = {
 }
 officeStateObj = {
     situation1: [{
-        text: '#Неудобный график работы'
+        text: '#НЕудобный график работы'
     }, {
         text: '#НЕухожанный внешний вид офиса'
     }, {
