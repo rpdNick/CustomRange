@@ -539,7 +539,6 @@ body {
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-    height: 145%;
     left: -23%;
     top: -7px;
     bottom: 0px;
@@ -548,7 +547,8 @@ body {
     transform-origin: top left;
     width: 0; }
   .hidden-content .btn-wrapper .submit-btn:hover {
-    color: #fff; }
+    color: #fff;
+    border: none; }
   .hidden-content .btn-wrapper .submit-btn::before,
   .hidden-content .btn-wrapper .submit-btn::after {
     background: #e60028;

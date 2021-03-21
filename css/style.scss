@@ -707,7 +707,7 @@ body {
               -moz-transition: all 0.3s;
               -o-transition: all 0.3s;
               transition: all 0.3s;
-              height: 145%;
+              //height: 145%;
               left: -23%;
               top: -7px;
               bottom: 0px;
@@ -718,6 +718,7 @@ body {
           }
           .submit-btn:hover{
               color: #fff;
+              border: none;
           }
           .submit-btn::before,
           .submit-btn::after {
