@@ -187,7 +187,6 @@ function runRange2(selector) {
                 for (let i = 0; i < officeSliderItems.length; i++){
                     $(officeSliderItems[i]).find(".office-label-txt").text(officeSituation[i].text);
                     officeInputs[i].value = officeSituation[i].text;
-                    console.log(officeInputs[0].value)
                 }
                 $('.office-slider-box .slides-title').text('ВАС разочаровало:');
                 $('.point10').hide();
