@@ -79,6 +79,8 @@ function runRange(selector) {
     let prevV = 0;
     let isScrollRight = null;
 
+    let wscaleNumbers = document.querySelectorAll('.wr-range-number');
+
     // Horizontal range slider
     rangeSlider(document.getElementById('range-slider-1'), {
         value: 0,
@@ -90,6 +92,11 @@ function runRange(selector) {
             let rangeVal = Math.round(v / 10);
             // console.log(rangeVal);
             $('#range1-val').val(rangeVal);
+
+            for(let i = 0; i < wscaleNumbers.length; i++){
+                $(wscaleNumbers).css({'font-size':'14px', 'font-weight':'normal'});
+                $(wscaleNumbers[rangeVal]).css({'font-size':'16px', 'font-weight':'600'});
+            }
 
             if(rangeVal < 10){
 
@@ -160,9 +167,7 @@ function runRange2(selector) {
     
     let prevV = 0;
     let isScrollRight = null;
-
-    // var testResult = document.getElementById('test-result');
-    // console.log(testResult)
+    let officeScaleNumbers = document.querySelectorAll('.of-range-number');
     // Horizontal range slider
     rangeSlider(document.getElementById('range-slider-2'), {
         value: 0,
@@ -170,8 +175,11 @@ function runRange2(selector) {
             
             let rangeVal = Math.round(v / 10);
             // console.log(rangeVal);
-            $('#range1-val').val(rangeVal);
-
+            $('#range2-val').val(rangeVal);
+            for(let i = 0; i < officeScaleNumbers.length; i++){
+                $(officeScaleNumbers).css({'font-size':'14px', 'font-weight':'normal'});
+                $(officeScaleNumbers[rangeVal]).css({'font-size':'16px', 'font-weight':'600'});
+            }
             if (rangeVal < 10){
                 let officeSituation = officeStateObj.situation1;
                 for (let i = 0; i < officeSliderItems.length; i++){

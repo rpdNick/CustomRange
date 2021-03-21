@@ -242,7 +242,9 @@ body {
     .range-section .range-numbers .number-section .number {
       display: inline-block;
       width: fit-content;
-      position: relative; }
+      position: relative;
+      font-size: 14px;
+      transition: .3s; }
   .range-section .range-numbers .number-section:first-child .number {
     right: 2px; }
   .range-section .range-numbers .number-section:nth-child(2) .number {
@@ -276,7 +278,8 @@ body {
   position: absolute;
   bottom: 11px;
   left: 26px;
-  min-width: 224px; }
+  min-width: 224px;
+  max-width: 250px; }
 
 .hidden-content .slide-box {
   margin-top: 5px;

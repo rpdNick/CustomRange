@@ -331,6 +331,8 @@ body {
             display:inline-block;
             width: fit-content;
             position: relative;
+            font-size: 14px;
+            transition: .3s;
         }
     }
     .number-section:first-child{
@@ -400,6 +402,7 @@ body {
     bottom: 11px;
     left: 26px;
     min-width: 224px;
+    max-width: 250px
 }
 .hidden-content{
     .slide-box{
