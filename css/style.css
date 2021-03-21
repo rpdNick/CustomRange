@@ -539,9 +539,9 @@ body {
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-    height: 118%;
+    height: 145%;
     left: -23%;
-    top: -3px;
+    top: -7px;
     bottom: 0px;
     transform: skew(-27deg);
     transition-duration: 0.6s;
