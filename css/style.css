@@ -112,7 +112,8 @@
   box-shadow: none; }
 
 body {
-  font-family: 'MyriadPro'; }
+  font-family: 'MyriadPro';
+  overflow: hidden; }
   body #main-container {
     max-width: 520px;
     padding: 30px 20px;
