@@ -799,3 +799,15 @@ body {
         left: 23px;
     }
 }
+
+@media (max-width: 364px){
+    body #main-container .worker-wrapper .worker-info .worker-question{
+        font-size: 13px;
+    }
+    body #main-container .worker-wrapper .worker-info .box .worker-name{
+        font-size: 14px;
+    }
+    .hidden-content .office-wrapper .office-info{
+        font-size: 13px;
+    }
+}
