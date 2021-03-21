@@ -556,7 +556,7 @@ body {
     position: absolute;
     z-index: -1; }
   .hidden-content .btn-wrapper .submit-btn:hover:after {
-    height: 112%;
+    height: 145%;
     width: 135%; }
 
 @media (max-width: 430px) and (max-width: 430px) {
