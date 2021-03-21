@@ -524,7 +524,8 @@ body {
 .hidden-content .btn-wrapper {
   margin: 50px 0px 5px 0px;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  display: none; }
   .hidden-content .btn-wrapper .submit-btn {
     font-size: 15px;
     background-color: transparent;
