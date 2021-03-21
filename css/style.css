@@ -15,16 +15,14 @@
   top: 71px;
   color: #000;
   outline: none;
-  height: 27px;
-  display: none; }
+  height: 27px; }
 
 .swiper-button-prev {
   left: -52px;
   top: 71px;
   color: #000;
   outline: none;
-  height: 27px;
-  display: none; }
+  height: 27px; }
 
 .swiper-button-next .line, .swiper-button-prev .line {
   height: 1.5px;
