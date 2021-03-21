@@ -603,14 +603,14 @@ body {
             opacity: 0;
           }
           .file-filling-icon{
-            position: absolute;
-            width: 13px;
-            height: 13px;
-            top: 21px;
-            right: -1px;
-            background-color: #E1032E;
-            border-radius: 50%;
-            display: none;
+              position: absolute;
+              width: 13px;
+              height: 13px;
+              top: 21px;
+              right: 3px;
+              background-color: #E1032E;
+              border-radius: 50%;
+              display: none;
             .file-count{
                 color: #fff;
                 font-size: 11px;
@@ -626,7 +626,7 @@ body {
             width: 40px;
             display: block;
             cursor: pointer;
-              margin-right: 10px;
+              margin-right: 5px;
             .icon{
               width: 40px;
               height: 40px;
