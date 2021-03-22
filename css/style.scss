@@ -794,51 +794,53 @@ body {
           }
       }
       .btn-wrapper{
-        margin: 50px 0px 5px 0px;
+        margin: 51px 0px 5px 0px;
         display: flex;
         justify-content: center;
-      .submit-btn{
-        font-size: 15px;
-        background-color: transparent;
-        border: 2px solid #e60028;
-        border-radius: 27px;
-        outline: none;
-        color: #282423;
-          font-weight: 600;
-        position: relative;
-        cursor: pointer;
-        margin: 0;
-        padding: 9px 20px;
-          overflow: hidden;
-      }
-          .submit-btn::after {
-              -webkit-transition: all 0.3s;
-              -moz-transition: all 0.3s;
-              -o-transition: all 0.3s;
-              transition: all 0.3s;
-              //height: 145%;
-              left: -23%;
-              top: -7px;
-              bottom: 0px;
-              transform: skew(-27deg);
-              transition-duration: 0.6s;
-              transform-origin: top left;
-              width: 0;
+          .button-overlay{
+              overflow: hidden;
+              border-radius: 27px;  .submit-btn{
+              font-size: 15px;
+              background-color: transparent;
+              border: 2px solid #e60028;
+              border-radius: 27px;
+              outline: none;
+              color: #282423;
+              font-weight: 600;
+              position: relative;
+              cursor: pointer;
+              margin: 0;
+              padding: 9px 20px;
+              overflow: hidden;
           }
-          .submit-btn:hover{
-              color: #fff;
+              .submit-btn::after {
+                  content: '';
+                  position: absolute;
+                  background: #e60028;
+                  z-index: -1;
+                  -webkit-transition: all 0.3s;
+                  -moz-transition: all 0.3s;
+                  -o-transition: all 0.3s;
+                  transition: all 0.3s;
+                  //height: 145%;
+                  left: -23%;
+                  top: -7px;
+                  bottom: 0px;
+                  transform: skew(-27deg);
+                  transition-duration: 0.6s;
+                  transform-origin: top left;
+                  width: 0;
+              }
+              .submit-btn:hover{
+                  color: #fff;
+              }
+              .submit-btn:hover:after {
+                  height: 145%;
+                  width: 135%;
+              }
+
           }
-          .submit-btn::before,
-          .submit-btn::after {
-              background: #e60028;
-              content: '';
-              position: absolute;
-              z-index: -1;
-          }
-          .submit-btn:hover:after {
-              height: 145%;
-              width: 135%;
-          }
+
     }
 }
 @media (min-width: 430px){
@@ -912,6 +914,9 @@ body {
     }
     .range-section .range-numbers .number-section:last-child .number{
         left: 23px;
+    }
+    #range-slider-2 .range-slider-track {
+        top: -1px;
     }
 }
 

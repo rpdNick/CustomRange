@@ -598,45 +598,46 @@ body {
       left: 20px;
       bottom: -7px; }
 .hidden-content .btn-wrapper {
-  margin: 50px 0px 5px 0px;
+  margin: 51px 0px 5px 0px;
   display: flex;
   justify-content: center; }
-  .hidden-content .btn-wrapper .submit-btn {
-    font-size: 15px;
-    background-color: transparent;
-    border: 2px solid #e60028;
-    border-radius: 27px;
-    outline: none;
-    color: #282423;
-    font-weight: 600;
-    position: relative;
-    cursor: pointer;
-    margin: 0;
-    padding: 9px 20px;
-    overflow: hidden; }
-  .hidden-content .btn-wrapper .submit-btn::after {
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-    left: -23%;
-    top: -7px;
-    bottom: 0px;
-    transform: skew(-27deg);
-    transition-duration: 0.6s;
-    transform-origin: top left;
-    width: 0; }
-  .hidden-content .btn-wrapper .submit-btn:hover {
-    color: #fff; }
-  .hidden-content .btn-wrapper .submit-btn::before,
-  .hidden-content .btn-wrapper .submit-btn::after {
-    background: #e60028;
-    content: '';
-    position: absolute;
-    z-index: -1; }
-  .hidden-content .btn-wrapper .submit-btn:hover:after {
-    height: 145%;
-    width: 135%; }
+  .hidden-content .btn-wrapper .button-overlay {
+    overflow: hidden;
+    border-radius: 27px; }
+    .hidden-content .btn-wrapper .button-overlay .submit-btn {
+      font-size: 15px;
+      background-color: transparent;
+      border: 2px solid #e60028;
+      border-radius: 27px;
+      outline: none;
+      color: #282423;
+      font-weight: 600;
+      position: relative;
+      cursor: pointer;
+      margin: 0;
+      padding: 9px 20px;
+      overflow: hidden; }
+    .hidden-content .btn-wrapper .button-overlay .submit-btn::after {
+      content: '';
+      position: absolute;
+      background: #e60028;
+      z-index: -1;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+      left: -23%;
+      top: -7px;
+      bottom: 0px;
+      transform: skew(-27deg);
+      transition-duration: 0.6s;
+      transform-origin: top left;
+      width: 0; }
+    .hidden-content .btn-wrapper .button-overlay .submit-btn:hover {
+      color: #fff; }
+    .hidden-content .btn-wrapper .button-overlay .submit-btn:hover:after {
+      height: 145%;
+      width: 135%; }
 
 @media (min-width: 430px) {
   .hidden-content .slide-box {
@@ -703,7 +704,10 @@ body {
     left: 24px; }
 
   .range-section .range-numbers .number-section:last-child .number {
-    left: 23px; } }
+    left: 23px; }
+
+  #range-slider-2 .range-slider-track {
+    top: -1px; } }
 @media (max-width: 364px) {
   body #main-container .worker-wrapper .worker-info .worker-question {
     font-size: 13px; }
