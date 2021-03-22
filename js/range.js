@@ -56,11 +56,11 @@ officeStateObj = {
         text: '#Комфортное: мебель, температура, запахи и т.п.'
     }],
 }
-let wChanged = 0;
-
-$('#range-slider-1').on('click', function (){
-    wChanged = 1;
-})
+// let wChanged = 0;
+//
+// $('#range-slider-1').on('click', function (){
+//     wChanged = 1;
+// })
 
 
 let sliderItems = document.querySelectorAll('.employer-slider-box .employer-label');
@@ -140,15 +140,15 @@ function runRange(selector) {
                 }
                 $('.employer-slider-box .slides-title').text('ВАМ понравилось больше всего:');
            }
-            if(wChanged == 1){
-                for(let i = 0; i < wscaleNumbers.length; i++){
-                    $(wscaleNumbers).css({'font-size':'14px', 'font-weight':'normal'});
-                    $(wscaleNumbers[rangeVal]).css({'font-size':'16px', 'font-weight':'600'});
-                }
-            }else {
-                $(wscaleNumbers).css({'font-size':'14px', 'font-weight':'normal'});
-                $(wscaleNumbers[rangeVal]).css({'font-size':'14px', 'font-weight':'normal'});
-            }
+            // if(wChanged == 1){
+            //     for(let i = 0; i < wscaleNumbers.length; i++){
+            //         $(wscaleNumbers).css({'font-size':'14px', 'font-weight':'normal'});
+            //         $(wscaleNumbers[rangeVal]).css({'font-size':'16px', 'font-weight':'600'});
+            //     }
+            // }else {
+            //     $(wscaleNumbers).css({'font-size':'14px', 'font-weight':'normal'});
+            //     $(wscaleNumbers[rangeVal]).css({'font-size':'14px', 'font-weight':'normal'});
+            // }
         
             for (let i = 0; i < 10; i++) {
                 i < rangeVal ?
@@ -160,10 +160,10 @@ function runRange(selector) {
     });
 }
 
-let oChange = 0;
-$('#range-slider-2').on('click', function (){
-    oChange = 1;
-})
+// let oChange = 0;
+// $('#range-slider-2').on('click', function (){
+//     oChange = 1;
+// })
 function runRange2(selector) {
     const parent = document.querySelector(selector);
     const container = parent.querySelector('.container');
@@ -217,15 +217,15 @@ function runRange2(selector) {
                 }
                 $('.office-slider-box .slides-title').text('ВАМ понравилось больше всего:');
             }
-            if(oChange == 1){
-                for(let i = 0; i < officeScaleNumbers.length; i++){
-                    $(officeScaleNumbers).css({'font-size':'14px', 'font-weight':'normal'});
-                    $(officeScaleNumbers[rangeVal]).css({'font-size':'16px', 'font-weight':'600'});
-                }
-            }else {
-                $(officeScaleNumbers).css({'font-size':'14px', 'font-weight':'normal'});
-                $(officeScaleNumbers[rangeVal]).css({'font-size':'14px', 'font-weight':'normal'});
-            }
+            // if(oChange == 1){
+            //     for(let i = 0; i < officeScaleNumbers.length; i++){
+            //         $(officeScaleNumbers).css({'font-size':'14px', 'font-weight':'normal'});
+            //         $(officeScaleNumbers[rangeVal]).css({'font-size':'16px', 'font-weight':'600'});
+            //     }
+            // }else {
+            //     $(officeScaleNumbers).css({'font-size':'14px', 'font-weight':'normal'});
+            //     $(officeScaleNumbers[rangeVal]).css({'font-size':'14px', 'font-weight':'normal'});
+            // }
 
             for (let i = 0; i < 10; i++) {
                 i < rangeVal ?
