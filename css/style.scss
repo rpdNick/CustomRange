@@ -497,7 +497,28 @@ body {
                 transition: 0.5s;
             }
         }
-
+        .hand{
+            position: absolute;
+            display: block;
+            width: 35px;
+            height: 36px;
+            background-image: url(../img/hand.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            left: -9px;
+            top: 5px;
+        }
+        .hand-active{
+            position: absolute;
+            display: block;
+            width: 30px;
+            height: 30px;
+            background-image: url("../img/hand.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     }
     span{
         width: 60%;

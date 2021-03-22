@@ -355,6 +355,26 @@ body {
       .range-section .help-txt .help-icon .active-arrow .r-arrow {
         stroke: #000 !important;
         transition: 0.5s; }
+    .range-section .help-txt .help-icon .hand {
+      position: absolute;
+      display: block;
+      width: 35px;
+      height: 36px;
+      background-image: url(../img/hand.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      left: -9px;
+      top: 5px; }
+    .range-section .help-txt .help-icon .hand-active {
+      position: absolute;
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-image: url("../img/hand.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
   .range-section .help-txt span {
     width: 60%;
     border-radius: 30px;

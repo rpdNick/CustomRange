@@ -8,7 +8,9 @@ $fontRoboto: 'Roboto';
     padding: 0;
     box-sizing: border-box;
 }
-
+.upper{
+    text-transform: uppercase;
+}
 body{
     font-family: $fontFamily;
     .page-container{
@@ -132,7 +134,7 @@ body{
                             max-width: 31px;
                             min-width: 31px;
                             background-color: transparent;
-                            border: 1px solid #C4C4C4;
+                            border: 1px solid #e9041e;
                             border-radius: 4px;
                             box-sizing: unset;
                             //transition: 0.3s;
