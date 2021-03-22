@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3455081-9ad6-4a78-9abb-08203e9bdb89" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/range.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/range.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +48,22 @@
       <workItem from="1616364844403" duration="1778000" />
       <workItem from="1616366717353" duration="1788000" />
       <workItem from="1616368542070" duration="1149000" />
-      <workItem from="1616397280275" duration="1027000" />
+      <workItem from="1616397280275" duration="1267000" />
+      <workItem from="1616399167761" duration="1772000" />
+      <workItem from="1616401096136" duration="1775000" />
+      <workItem from="1616402902335" duration="1780000" />
+      <workItem from="1616404955451" duration="1653000" />
+      <workItem from="1616406681492" duration="58000" />
+      <workItem from="1616406816400" duration="1358000" />
+      <workItem from="1616409358596" duration="592000" />
+      <workItem from="1616409975824" duration="1531000" />
+      <workItem from="1616411892058" duration="1812000" />
+      <workItem from="1616413754599" duration="1777000" />
+      <workItem from="1616415569301" duration="1776000" />
+      <workItem from="1616417380645" duration="1778000" />
+      <workItem from="1616419194236" duration="1772000" />
+      <workItem from="1616421006131" duration="1773000" />
+      <workItem from="1616422885027" duration="818000" />
     </task>
     <servers />
   </component>
@@ -55,5 +75,9 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2381" y="165" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1616342183515" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1616415754387">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1616415754387" />
   </component>
 </project>

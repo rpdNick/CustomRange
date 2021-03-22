@@ -5,21 +5,35 @@
 
 @font-face {
   font-family: 'MyriadPro';
-  src: url("../font/MyriadPro-Regular.eot");
-  src: url("../font/MyriadPro-Regular.woff") format("woff"), url("../font/MyriadPro-Regular.ttf") format("truetype");
+  src: url("../font/MullerRegular.woff") format("woff"), url("../font/MullerRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'MyriadProExtraBold';
+  src: url("../font/MullerExtraBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'MyriadProBold';
+  src: url("../font/MullerBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'MullerMedium';
+  src: url("../font/MullerMedium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 .swiper-button-next {
   right: auto;
-  left: -21px;
-  top: 71px;
+  left: -45px;
+  top: 30px;
   color: #000;
   outline: none;
   height: 27px; }
 
 .swiper-button-prev {
-  left: -52px;
-  top: 71px;
+  left: -78px;
+  top: 30px;
   color: #000;
   outline: none;
   height: 27px; }
@@ -49,7 +63,8 @@
 
 .range-slider {
   position: relative;
-  z-index: 999; }
+  z-index: 9999;
+  bottom: 86px; }
 
 .range-slider-track::before {
   display: none; }
@@ -63,21 +78,31 @@
 .txt-line::before {
   content: '';
   position: absolute;
-  top: 18px;
-  width: 115px;
-  height: 2px;
+  top: 19px;
+  width: 120%;
+  height: 3px;
   background: #000; }
 
 .range-slider-track {
-  cursor: auto; }
+  width: 100%;
+  height: 36px;
+  margin: 0 auto;
+  position: relative;
+  background: rgba(0, 0, 0, 0.4);
+  cursor: auto;
+  opacity: 0; }
+
+#range-slider-2 .range-slider-track {
+  top: 27px; }
 
 .range-slider-track .dragger {
   width: 15px;
-  height: 15px;
+  height: 100%;
   background-color: #e60028;
-  top: 8px;
+  top: 0px;
   border-radius: 50%;
-  cursor: pointer; }
+  cursor: auto;
+  opacity: 0; }
 
 .range-slider-track .dragger::before {
   content: '';
@@ -137,13 +162,15 @@ body {
         color: #000;
         position: relative; }
         body #main-container .worker-wrapper .worker-info .worker-question {
-          font-size: 16px; }
+          font-size: 16px;
+          font-family: 'MyriadProExtraBold'; }
         body #main-container .worker-wrapper .worker-info .box {
           position: absolute;
           bottom: 0; }
           body #main-container .worker-wrapper .worker-info .box .worker-name {
             color: #333333;
-            font-size: 18px; }
+            font-size: 14px;
+            font-family: 'MyriadProBold'; }
           body #main-container .worker-wrapper .worker-info .box .worker-position {
             color: #807d7d;
             font-size: 14px; }
@@ -210,22 +237,22 @@ body {
       background: #d3d3d3 !important; }
     .range-section .container .range-part:first-child.inactive::before {
       content: '';
-      height: 50px;
+      height: 32px;
       width: 1px;
       background: #d3d3d3 !important; }
     .range-section .container .range-part:first-child::before {
       content: '';
-      height: 50px;
+      height: 32px;
       width: 1px;
       background: #93080b; }
   .range-section .container .line {
-    height: 50px;
+    height: 32px;
     width: 1px;
     transition: 0.4s; }
     .range-section .container .line.middle-line {
-      height: 36px; }
-    .range-section .container .line.small-line {
       height: 25px; }
+    .range-section .container .line.small-line {
+      height: 18px; }
   .range-section .container .range-thumb {
     position: absolute;
     top: 82px;
@@ -248,7 +275,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  width: 100%; }
+  width: 100%;
+  margin-top: 5px; }
   .range-section .range-numbers .number-section {
     width: 10%;
     display: flex;
@@ -262,7 +290,8 @@ body {
       width: fit-content;
       position: relative;
       font-size: 14px;
-      transition: .3s; }
+      transition: .3s;
+      color: #000; }
   .range-section .range-numbers .number-section:first-child .number {
     right: 2px; }
   .range-section .range-numbers .number-section:nth-child(2) .number {
@@ -287,39 +316,81 @@ body {
     left: 33px; }
 
 .range-section .help-txt {
-  width: 60%;
-  border-radius: 30px;
-  background: #e60028;
-  padding: 5px 5px 5px 10px;
-  color: #fff;
-  font-size: 11px;
-  position: absolute;
-  bottom: 11px;
-  left: 26px;
-  min-width: 224px;
-  max-width: 250px; }
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  position: relative; }
+  .range-section .help-txt .help-icon {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #ff7381;
+    transition: .5s;
+    position: relative;
+    margin-left: 13px; }
+    .range-section .help-txt .help-icon .arrow-left {
+      width: 10px;
+      height: 20px;
+      position: absolute;
+      left: -13px;
+      top: -2px; }
+    .range-section .help-txt .help-icon .arrow-right {
+      width: 10px;
+      height: 20px;
+      position: absolute;
+      right: -13px;
+      top: -2px; }
+      .range-section .help-txt .help-icon .arrow-right .arrow-line {
+        width: 0px;
+        height: 2px;
+        background: #000;
+        position: absolute;
+        top: 8px;
+        left: -15px;
+        transition: 0.2s; }
+    .range-section .help-txt .help-icon .active-arrow {
+      right: -30px;
+      transition: 0.5s; }
+      .range-section .help-txt .help-icon .active-arrow .r-arrow {
+        stroke: #000 !important;
+        transition: 0.5s; }
+  .range-section .help-txt span {
+    width: 60%;
+    border-radius: 30px;
+    background: #e60028;
+    padding: 5px 5px 5px 10px;
+    color: #fff;
+    font-size: 11px;
+    min-width: 224px;
+    max-width: 250px;
+    margin-left: 40px;
+    display: none;
+    position: absolute;
+    left: 20px; }
 
+.hidden-content .slides-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 30px; }
 .hidden-content .slide-box {
   margin-top: 5px;
-  width: 90%;
+  width: 80%;
   margin-left: auto;
   position: relative; }
-  .hidden-content .slide-box .slides-title {
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 20px; }
   .hidden-content .slide-box .swiper-container .swiper-slide input {
     display: none;
     opacity: 0; }
   .hidden-content .slide-box .swiper-container .swiper-slide input[type='radio']:checked + label .check-icon {
     background-color: #9F0002;
-    transition: 1s; }
+    transition: .5s; }
   .hidden-content .slide-box .swiper-container .swiper-slide input[type='radio']:checked + label .office-label-txt {
     text-decoration: underline;
     text-decoration-color: #9F0002;
     text-underline-position: under;
     text-underline-offset: -1px;
-    transition: 1s; }
+    transition: .5s; }
   .hidden-content .slide-box .swiper-container .swiper-slide input[type='radio']:checked + label .employer-label-txt {
     text-decoration: underline;
     text-decoration-color: #9F0002;
@@ -327,7 +398,8 @@ body {
     text-underline-offset: -1px;
     transition: 1s; }
   .hidden-content .slide-box .swiper-container .swiper-slide .employer-label {
-    cursor: pointer; }
+    cursor: pointer;
+    min-width: 100px; }
     .hidden-content .slide-box .swiper-container .swiper-slide .employer-label .check-icon {
       background-position: center;
       background-size: contain;
@@ -362,11 +434,12 @@ body {
       -webkit-mask-image: url(../img/scroll-icons/5.png);
       -webkit-mask-size: 75px; }
     .hidden-content .slide-box .swiper-container .swiper-slide .employer-label .employer-label-txt {
-      font-size: 11px;
+      font-size: 15px;
       text-align: center;
-      font-weight: 600;
+      font-weight: 500;
       color: #000;
-      max-width: 85px; }
+      max-width: 95px;
+      font-family: 'MullerMedium'; }
   .hidden-content .slide-box .swiper-container .swiper-slide .office-label {
     cursor: pointer; }
     .hidden-content .slide-box .swiper-container .swiper-slide .office-label .check-icon {
@@ -377,35 +450,36 @@ body {
       background-color: #807d7d;
       transition: 0.5s; }
     .hidden-content .slide-box .swiper-container .swiper-slide .office-label .icon-1 {
-      width: 67px;
-      height: 82px;
+      width: 60px;
+      height: 76px;
       -webkit-mask-image: url(../img/office-scroll-icons/1.png);
-      -webkit-mask-size: 67px; }
+      -webkit-mask-size: 60px; }
     .hidden-content .slide-box .swiper-container .swiper-slide .office-label .icon-2 {
-      width: 70px;
-      height: 82px;
+      width: 62px;
+      height: 76px;
       -webkit-mask-image: url(../img/office-scroll-icons/2.png);
-      -webkit-mask-size: 70px; }
+      -webkit-mask-size: 62px; }
     .hidden-content .slide-box .swiper-container .swiper-slide .office-label .icon-3 {
-      width: 70px;
-      height: 82px;
+      width: 60px;
+      height: 76px;
       -webkit-mask-image: url(../img/office-scroll-icons/3.png);
-      -webkit-mask-size: 70px; }
+      -webkit-mask-size: 60px; }
     .hidden-content .slide-box .swiper-container .swiper-slide .office-label .icon-4 {
-      width: 75px;
-      height: 82px;
+      width: 66px;
+      height: 76px;
       -webkit-mask-image: url(../img/office-scroll-icons/4.png);
-      -webkit-mask-size: 75px; }
+      -webkit-mask-size: 66px; }
     .hidden-content .slide-box .swiper-container .swiper-slide .office-label .icon-5 {
-      width: 83px;
-      height: 82px;
+      width: 75px;
+      height: 76px;
       -webkit-mask-image: url(../img/office-scroll-icons/5.png);
-      -webkit-mask-size: 83px; }
+      -webkit-mask-size: 75px; }
     .hidden-content .slide-box .swiper-container .swiper-slide .office-label .office-label-txt {
-      font-size: 11px;
+      font-size: 15px;
       text-align: center;
-      font-weight: 600;
-      color: #000; }
+      font-weight: 500;
+      color: #000;
+      font-family: 'MullerMedium'; }
 .hidden-content .comment-wrapper {
   margin-top: 30px; }
   .hidden-content .comment-wrapper .comment {
@@ -491,7 +565,7 @@ body {
     .hidden-content .clip-wrapper .clip-inputs-cont label input {
       display: none; }
 .hidden-content .office-wrapper {
-  margin-top: 30px;
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -499,27 +573,29 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between; }
   .hidden-content .office-wrapper .office-photo {
-    width: 55%;
+    width: 48%;
     max-width: 218px; }
     .hidden-content .office-wrapper .office-photo img {
       width: 100%; }
   .hidden-content .office-wrapper .office-info {
     margin-left: 20px;
-    width: calc(45% - 20px);
+    width: calc(52% - 20px);
     color: #000;
-    position: relative;
-    font-size: 16px; }
+    font-size: 16px;
+    font-family: 'MyriadProExtraBold';
+    position: relative; }
     .hidden-content .office-wrapper .office-info .office-name {
-      position: relative; }
+      position: relative;
+      display: block; }
     .hidden-content .office-wrapper .office-info .office-name::before {
       content: '';
       display: inline-block;
       position: absolute;
-      width: 100%;
-      height: 2px;
+      width: 88%;
+      height: 3px;
       background: #000;
-      top: 20px;
-      left: 20px; }
+      left: 20px;
+      bottom: -7px; }
 .hidden-content .btn-wrapper {
   margin: 50px 0px 5px 0px;
   display: flex;

@@ -29,6 +29,9 @@
                 </div>
             </div>
         </div>
+            <div class="test" style="height: 60px; width: 100%; display: none;">
+                <img src="./img/test.png" alt="" style="width: 100%">
+            </div>
         <div class="range-section" id="range1">
             <div class="container">
                 <div class="range-part inactive">
@@ -80,15 +83,36 @@
                 </div>
             </div>
             <div class="help-txt">
-                <span>проведите по шкале вправо или влево</span>
+                <div class="help-icon first-range-help">
+                    <div class="arrow-left">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 17 30" style="enable-background:new 0 0 17 30;" xml:space="preserve">
+                        <style type="text/css">
+                            .l-arrow{fill:none;stroke:#B0AFAD;stroke-width:1.5;stroke-linejoin:bevel;stroke-miterlimit:10;}
+                        </style>
+                                                    <polyline class="l-arrow" points="16.1,28.9 1.5,15 16.2,1.4 "/>
+                        </svg>
+                    </div>
+                    <div class="arrow-right">
+                        <div class="arrow-line"></div>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 17 31" style="enable-background:new 0 0 17 31;" xml:space="preserve">
+                            <style type="text/css">
+                                .r-arrow{fill:none;stroke:#B0AFAD;stroke-width:1.5;stroke-linejoin:bevel;stroke-miterlimit:10;}
+                            </style>
+                                                        <polyline class="r-arrow" points="1.7,28.9 16.2,15 1.5,1.4 "/>
+                            </svg>
+                    </div>
+                </div>
+                <span class="first-range-help-txt">проведите по шкале вправо или влево</span>
             </div>
             <div id="range-slider-1"></div>
             <input type="range" min="0" max="10" style="width: 1px; height: 1px; opacity: 0;" id="range1-val">
         </div>
 
-        <div class="hidden-content" style="display: none;">
+        <div class="hidden-content" >
+            <p class="slides-title" style="margin-top: 40px">ВАC разочаровало:</p>
             <div class="slide-box employer-slider-box">
-                <p class="slides-title">ВАC разочаровало:</p>
                 <!-- Swiper -->
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
@@ -143,17 +167,17 @@
                 <textarea class="comment" name="step_o_desc" placeholder="Напишите комментарий"></textarea>
                 <p class="comment-error">Поле обязательно к заполнению</p>
             </div>
-            <div class="clip-wrapper"style="overflow: hidden !important;">
-                <p class="audio-help-txt">или оставьте аудио-комментарий</p>
-                <div class="clip-icon">
-                    <i class="file-filling-icon" id="file-filling-icon"><span class="file-count" id="file-count">1</span></i>
-                    <input type="file" name="f1[]" multiple="multiple" accept="audio/mp4, .mp3,video/mp4, .MOV, video"
-                        id="add-file" class="hide-input">
-                    <label for="add-file" class="add-new-file">
-                        <img class="icon" id="icon" src="img/clip-icon.svg">
-                    </label>
-                </div>
-            </div>
+<!--            <div class="clip-wrapper"style="overflow: hidden !important;">-->
+<!--                <p class="audio-help-txt">или оставьте аудио-комментарий</p>-->
+<!--                <div class="clip-icon">-->
+<!--                    <i class="file-filling-icon" id="file-filling-icon"><span class="file-count" id="file-count">1</span></i>-->
+<!--                    <input type="file" name="f1[]" multiple="multiple" accept="audio/mp4, .mp3,video/mp4, .MOV, video"-->
+<!--                        id="add-file" class="hide-input">-->
+<!--                    <label for="add-file" class="add-new-file">-->
+<!--                        <img class="icon" id="icon" src="img/clip-icon.svg">-->
+<!--                    </label>-->
+<!--                </div>-->
+<!--            </div>-->
             <div class="office-wrapper">
                 <div class="office-photo">
                     <img src="./img/office.png" alt="photo">
@@ -212,14 +236,35 @@
                         <span class="number of-range-number">10</span>
                     </div>
                 </div>
-                <!-- <div class="help-txt">
-                    <span>проведите по шкале вправо или влево</span>
-                </div> -->
+                <div class="help-txt">
+                    <div class="help-icon second-range-help">
+                        <div class="arrow-left">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 17 30" style="enable-background:new 0 0 17 30;" xml:space="preserve">
+                        <style type="text/css">
+                            .l-arrow{fill:none;stroke:#B0AFAD;stroke-width:1.5;stroke-linejoin:bevel;stroke-miterlimit:10;}
+                        </style>
+                                <polyline class="l-arrow" points="16.1,28.9 1.5,15 16.2,1.4 "/>
+                        </svg>
+                        </div>
+                        <div class="arrow-right">
+                            <div class="arrow-line"></div>
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 17 31" style="enable-background:new 0 0 17 31;" xml:space="preserve">
+                            <style type="text/css">
+                                .r-arrow{fill:none;stroke:#B0AFAD;stroke-width:1.5;stroke-linejoin:bevel;stroke-miterlimit:10;}
+                            </style>
+                                <polyline class="r-arrow" points="1.7,28.9 16.2,15 1.5,1.4 "/>
+                            </svg>
+                        </div>
+                    </div>
+                    <span class="second-range-help-txt">проведите по шкале вправо или влево</span>
+                </div>
                 <div id="range-slider-2"></div>
                 <input type="range" min="0" max="10" style="width: 1px; height: 1px; opacity: 0;" id="range2-val">
             </div>
+            <p class="slides-title">ВАC разочаровало:</p>
             <div class="slide-box office-slider-box">
-                <p class="slides-title">ВАC разочаровало:</p>
                 <!-- Swiper -->
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
@@ -274,16 +319,16 @@
                 <textarea class="comment" name="step_o_desc" placeholder="Напишите комментарий"></textarea>
                 <p class="comment-error">Поле обязательно к заполнению</p>
             </div>
-            <div class="clip-wrapper" style="overflow: hidden !important;">
-                <div class="clip-icon">
-                    <i class="file-filling-icon" id="office-filling-icon"><span class="file-count" id="office-file-count">1</span></i>
-                    <input type="file" name="f2[]" multiple="multiple" accept="audio/mp4, .mp3,video/mp4, .MOV, video"
-                        id="office-add-file" class="hide-input">
-                    <label for="office-add-file" class="add-new-file">
-                        <img class="icon" id="office-icon" src="img/clip-icon.svg">
-                    </label>
-                </div>
-            </div>
+<!--            <div class="clip-wrapper" style="overflow: hidden !important;">-->
+<!--                <div class="clip-icon">-->
+<!--                    <i class="file-filling-icon" id="office-filling-icon"><span class="file-count" id="office-file-count">1</span></i>-->
+<!--                    <input type="file" name="f2[]" multiple="multiple" accept="audio/mp4, .mp3,video/mp4, .MOV, video"-->
+<!--                        id="office-add-file" class="hide-input">-->
+<!--                    <label for="office-add-file" class="add-new-file">-->
+<!--                        <img class="icon" id="office-icon" src="img/clip-icon.svg">-->
+<!--                    </label>-->
+<!--                </div>-->
+<!--            </div>-->
             <div class="btn-wrapper">
                 <button class="submit-btn" type="submit">Завершить опрос</button>
             </div>
@@ -323,7 +368,7 @@
         }
     </style>
     <script>
-  
+
     </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/range.js"></script>
@@ -332,32 +377,58 @@
     history.back(); history.forward();
     window.onpopstate = function () { history.go(1); };
 
+    $('.first-range-help').on('click', function (){
+        $('.first-range-help-txt').fadeIn();
+        $('.first-range-help .arrow-right').addClass('active-arrow');
+        $('.first-range-help .arrow-line').css('width','24px');
+        $('.first-range-help').css('background','#e60028');
+        function reverseItems(){
+            $('.first-range-help-txt').fadeOut();
+            $('.first-range-help .arrow-right').removeClass('active-arrow');
+            $('.first-range-help .arrow-line').css('width','0px');
+            $('.first-range-help').css('background','#ff7381');
+        }
+        setTimeout(reverseItems, 2000);
+    })
+    $('.second-range-help').on('click', function (){
+        $('.second-range-help-txt').fadeIn();
+        $('.second-range-help .arrow-right').addClass('active-arrow');
+        $('.second-range-help .arrow-line').css('width','24px');
+        $('.second-range-help').css('background','#e60028');
+        function reverseItems(){
+            $('.second-range-help-txt').fadeOut();
+            $('.second-range-help .arrow-right').removeClass('active-arrow');
+            $('.second-range-help .arrow-line').css('width','0px');
+            $('.second-range-help').css('background','#ff7381');
+        }
+        setTimeout(reverseItems, 2000);
+    })
      // Check attachments
-     let file = document.getElementById('add-file');
-        file.addEventListener('change', () => {
-            fileVal = file.value;
-            if (fileVal) {
-                $('#file-filling-icon').show();
-                $('#icon').attr('src','img/clip-icon-active.svg');
-                $('#file-count').text(file.files.length);
-                $('.audio-help-txt').hide();
-            }
-        });
+     // let file = document.getElementById('add-file');
+     //    file.addEventListener('change', () => {
+     //        fileVal = file.value;
+     //        if (fileVal) {
+     //            $('#file-filling-icon').show();
+     //            $('#icon').attr('src','img/clip-icon-active.svg');
+     //            $('#file-count').text(file.files.length);
+     //            $('.audio-help-txt').hide();
+     //        }
+     //    });
 
-        let officeFile = document.getElementById('office-add-file');
-        officeFile.addEventListener('change', () => {
-            fileVal = officeFile.value;
-            if (fileVal) {
-                $('#office-filling-icon').show();
-                $('#office-icon').attr('src','img/clip-icon-active.svg');
-                $('#office-file-count').text(officeFile.files.length);
-            }
-        });
+        // let officeFile = document.getElementById('office-add-file');
+        // officeFile.addEventListener('change', () => {
+        //     fileVal = officeFile.value;
+        //     if (fileVal) {
+        //         $('#office-filling-icon').show();
+        //         $('#office-icon').attr('src','img/clip-icon-active.svg');
+        //         $('#office-file-count').text(officeFile.files.length);
+        //     }
+        // });
 
     var swiper = new Swiper('.employer-slider-box .swiper-container', {
       speed: 700,
-      slidesPerView: 2.7,
-      spaceBetween: 30,
+      slidesPerView: 2.8,
+      spaceBetween: 15,
       slidesPerGroup: 3,
       observer: true,
       observeParents: true,
@@ -375,9 +446,9 @@
 
     var swiper = new Swiper('.office-slider-box .swiper-container', {
       speed: 700,
-      slidesPerView: 2.7,
+      slidesPerView: 2.2,
       spaceBetween: 30,
-      slidesPerGroup: 3,
+      slidesPerGroup: 2,
       observer: true,
       observeParents: true,
     //   loop: true,

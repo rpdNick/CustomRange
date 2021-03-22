@@ -56,6 +56,11 @@ officeStateObj = {
         text: '#Комфортное: мебель, температура, запахи и т.п.'
     }],
 }
+let wChanged = 0;
+
+$('#range-slider-1').on('click', function (){
+    wChanged = 1;
+})
 
 
 let sliderItems = document.querySelectorAll('.employer-slider-box .employer-label');
@@ -80,32 +85,28 @@ function runRange(selector) {
     let isScrollRight = null;
 
     let wscaleNumbers = document.querySelectorAll('.wr-range-number');
+
     let workerInputs = document.querySelectorAll('.first-question-inp');
     // Horizontal range slider
     rangeSlider(document.getElementById('range-slider-1'), {
         value: 0,
         drag: function(v) {
             if(v > 0){
-                $('.help-txt').fadeOut();
+                // $('.help-txt').fadeOut();
                 $('.hidden-content').fadeIn();
             }
             let rangeVal = Math.round(v / 10);
             // console.log(rangeVal);
             $('#range1-val').val(rangeVal);
 
-            for(let i = 0; i < wscaleNumbers.length; i++){
-                $(wscaleNumbers).css({'font-size':'14px', 'font-weight':'normal'});
-                $(wscaleNumbers[rangeVal]).css({'font-size':'16px', 'font-weight':'600'});
-            }
-
             if(rangeVal < 10){
 
                 // images NOT STANDART size!!!!!
-                $(sliderItems[0]).find(".check-icon").css({'width':'67px', 'height':'82px','-webkit-mask-size':'67px'});
-                $(sliderItems[1]).find(".check-icon").css({'width':' 95px', 'height':'82px','-webkit-mask-size':'95px'});
-                $(sliderItems[2]).find(".check-icon").css({'width':' 40px', 'height':'75px','-webkit-mask-size':'40px', 'margin-top':'7px'});
-                $(sliderItems[3]).find(".check-icon").css({'width':' 75px', 'height':'82px','-webkit-mask-size':'75px'});
-                $(sliderItems[4]).find(".check-icon").css({'width':' 75px', 'height':'82px','-webkit-mask-size':'75px'});
+                $(sliderItems[0]).find(".check-icon").css({'width':'58px', 'height':'78px','-webkit-mask-size':'58px'});
+                $(sliderItems[1]).find(".check-icon").css({'width':' 88px', 'height':'78px','-webkit-mask-size':'88px'});
+                $(sliderItems[2]).find(".check-icon").css({'width':' 36px', 'height':'69px','-webkit-mask-size':'36px', 'margin-top':'11px'});
+                $(sliderItems[3]).find(".check-icon").css({'width':' 70px', 'height':'78px','-webkit-mask-size':'70px'});
+                $(sliderItems[4]).find(".check-icon").css({'width':' 75px', 'height':'78px','-webkit-mask-size':'75px'});
                  
                 // $('.first-question-inp').prop('checked', false);  
                 let employerSituation = employerStateObj.situation1;
@@ -125,10 +126,10 @@ function runRange(selector) {
             if (rangeVal == 10){
 
                  // images NOT STANDART size!!!!!
-                 $(sliderItems[0]).find(".check-icon").css({'width':'76px', 'height':'82px','-webkit-mask-size':'76px'});
-                 $(sliderItems[1]).find(".check-icon").css({'width':' 81px', 'height':'82px','-webkit-mask-size':'81px'});
-                 $(sliderItems[2]).find(".check-icon").css({'width':' 65px', 'height':'82px','-webkit-mask-size':'65px', 'margin-top':'0px'});
-                 $(sliderItems[4]).find(".check-icon").css({'width':' 72px', 'height':'82px','-webkit-mask-size':'72px'});
+                 $(sliderItems[0]).find(".check-icon").css({'width':'70px', 'height':'78px','-webkit-mask-size':'70px'});
+                 $(sliderItems[1]).find(".check-icon").css({'width':' 73px', 'height':'78px','-webkit-mask-size':'73px'});
+                 $(sliderItems[2]).find(".check-icon").css({'width':' 60px', 'height':'78px','-webkit-mask-size':'60px', 'margin-top':'0px'});
+                 $(sliderItems[4]).find(".check-icon").css({'width':' 68px', 'height':'78px','-webkit-mask-size':'68px'});
 
                 let employerSituation = employerStateObj.situation2;
                 for (let i = 0; i < sliderItems.length; i++){
@@ -139,6 +140,15 @@ function runRange(selector) {
                 }
                 $('.employer-slider-box .slides-title').text('ВАМ понравилось больше всего:');
            }
+            if(wChanged == 1){
+                for(let i = 0; i < wscaleNumbers.length; i++){
+                    $(wscaleNumbers).css({'font-size':'14px', 'font-weight':'normal'});
+                    $(wscaleNumbers[rangeVal]).css({'font-size':'16px', 'font-weight':'600'});
+                }
+            }else {
+                $(wscaleNumbers).css({'font-size':'14px', 'font-weight':'normal'});
+                $(wscaleNumbers[rangeVal]).css({'font-size':'14px', 'font-weight':'normal'});
+            }
         
             for (let i = 0; i < 10; i++) {
                 i < rangeVal ?
@@ -148,10 +158,12 @@ function runRange(selector) {
             }
         }
     });
-
 }
 
-
+let oChange = 0;
+$('#range-slider-2').on('click', function (){
+    oChange = 1;
+})
 function runRange2(selector) {
     const parent = document.querySelector(selector);
     const container = parent.querySelector('.container');
@@ -176,12 +188,10 @@ function runRange2(selector) {
         drag: function(v) {
             
             let rangeVal = Math.round(v / 10);
-            // console.log(rangeVal);
+            // console.log(rangeVal)
+
+
             $('#range2-val').val(rangeVal);
-            for(let i = 0; i < officeScaleNumbers.length; i++){
-                $(officeScaleNumbers).css({'font-size':'14px', 'font-weight':'normal'});
-                $(officeScaleNumbers[rangeVal]).css({'font-size':'16px', 'font-weight':'600'});
-            }
             if (rangeVal < 10){
                 let officeSituation = officeStateObj.situation1;
                 for (let i = 0; i < officeSliderItems.length; i++){
@@ -207,7 +217,16 @@ function runRange2(selector) {
                 }
                 $('.office-slider-box .slides-title').text('ВАМ понравилось больше всего:');
             }
-        
+            if(oChange == 1){
+                for(let i = 0; i < officeScaleNumbers.length; i++){
+                    $(officeScaleNumbers).css({'font-size':'14px', 'font-weight':'normal'});
+                    $(officeScaleNumbers[rangeVal]).css({'font-size':'16px', 'font-weight':'600'});
+                }
+            }else {
+                $(officeScaleNumbers).css({'font-size':'14px', 'font-weight':'normal'});
+                $(officeScaleNumbers[rangeVal]).css({'font-size':'14px', 'font-weight':'normal'});
+            }
+
             for (let i = 0; i < 10; i++) {
                 i < rangeVal ?
                     parts[i].classList.remove('inactive') :
