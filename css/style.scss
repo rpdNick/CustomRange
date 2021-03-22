@@ -720,7 +720,6 @@ body {
           }
           .submit-btn:hover{
               color: #fff;
-              border: none;
           }
           .submit-btn::before,
           .submit-btn::after {
@@ -768,6 +767,12 @@ body {
         .range-section .range-numbers .number-section:last-child .number{
             left: 27px;
         }
+    }
+    .hidden-content .btn-wrapper .submit-btn:hover{
+        color: #000;
+    }
+    .hidden-content .btn-wrapper .submit-btn::before, .hidden-content .btn-wrapper .submit-btn::after{
+        background: transparent;
     }
 }
 

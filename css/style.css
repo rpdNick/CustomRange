@@ -550,8 +550,7 @@ body {
     transform-origin: top left;
     width: 0; }
   .hidden-content .btn-wrapper .submit-btn:hover {
-    color: #fff;
-    border: none; }
+    color: #fff; }
   .hidden-content .btn-wrapper .submit-btn::before,
   .hidden-content .btn-wrapper .submit-btn::after {
     background: #e60028;
@@ -592,6 +591,12 @@ body {
 
   .range-section .range-numbers .number-section:last-child .number {
     left: 27px; } }
+@media (max-width: 430px) {
+  .hidden-content .btn-wrapper .submit-btn:hover {
+    color: #000; }
+
+  .hidden-content .btn-wrapper .submit-btn::before, .hidden-content .btn-wrapper .submit-btn::after {
+    background: transparent; } }
 @media (max-width: 380px) {
   .range-section .range-numbers .number-section {
     width: 9%; }
