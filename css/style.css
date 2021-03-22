@@ -441,7 +441,8 @@ body {
       max-width: 95px;
       font-family: 'MullerMedium'; }
   .hidden-content .slide-box .swiper-container .swiper-slide .office-label {
-    cursor: pointer; }
+    cursor: pointer;
+    max-width: 110px; }
     .hidden-content .slide-box .swiper-container .swiper-slide .office-label .check-icon {
       background-position: center;
       background-size: contain;
