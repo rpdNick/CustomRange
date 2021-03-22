@@ -103,7 +103,7 @@ function runRange(selector) {
 
                 // images NOT STANDART size!!!!!
                 $(sliderItems[0]).find(".check-icon").css({'width':'58px', 'height':'78px','-webkit-mask-size':'58px'});
-                $(sliderItems[1]).find(".check-icon").css({'width':' 88px', 'height':'78px','-webkit-mask-size':'88px'});
+                $(sliderItems[1]).find(".check-icon").css({'width':' 84px', 'height':'78px','-webkit-mask-size':'84px'});
                 $(sliderItems[2]).find(".check-icon").css({'width':' 36px', 'height':'69px','-webkit-mask-size':'36px', 'margin-top':'11px'});
                 $(sliderItems[3]).find(".check-icon").css({'width':' 70px', 'height':'78px','-webkit-mask-size':'70px'});
                 $(sliderItems[4]).find(".check-icon").css({'width':' 75px', 'height':'78px','-webkit-mask-size':'75px'});
